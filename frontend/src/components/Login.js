@@ -7,22 +7,28 @@ import InputGroup from './InputGruop'
 
 export default function Login() {
   return (
-    <div>
-      <div className='login-page'>
-        <img src={logo} />
-        <div id='contenido login'>
-          <h1>Iniciar Sesion</h1>
-          <div className='email-input'>
+    <div id ='content'>
+      <div id='login-page'>
+        <img id='logo' src={logo} />
+        <div id='contenido-login'>
+          <h1 id = 'texto'>Iniciar Sesion</h1>
+          
+          <div className='field' id='email-input'>
             <label>Correo Electronico</label>
             <InputGroup type='email' id='email' placeholder='correo@edu.com' />
           </div>
-          <div className='password-input'>
+
+          <div className='field' id='password-input'>
             <label>Contraseña</label>
             <InputGroup type='password' id='password' placeholder='***********' />
           </div>
+
+          <button id = 'iniciarSesion'><label id='iniciarSesiontxt'>Iniciar Sesion</label></button>
         </div>
       </div>
-      <img src={gatito} />
+
+      <img id='gatito' src={gatito} />
+
     </div>
   )
 }
