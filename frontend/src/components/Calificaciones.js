@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
+import Navbar from "./Navbar";
 
-export default function Calificaciones() {
+export default function Calificaciones({ user, setUser }) {
   return (
     <div>
-      <h1>Bienvenido a CALIFICACIONES</h1>
+      <Navbar setUser={setUser}/>
+      <h1>Bienvenido a CALIFICACIONES {user}</h1>
     </div>
-  )
+  );
 }
