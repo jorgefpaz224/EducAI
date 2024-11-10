@@ -1,13 +1,13 @@
 import React from "react";
 import Navbar from "./Navbar";
 
-const Calificaciones = ({ user, setUser }) => {
+const Cursos = ({ user, setUser }) => {
   return (
     <div>
       <Navbar setUser={setUser} />
-      <h1>Bienvenido Alumno {user}</h1>
+      <h1>Bienvenido Docente {user}</h1>
     </div>
   );
 }
 
-export default Calificaciones;
+export default Cursos;

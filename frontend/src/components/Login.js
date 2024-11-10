@@ -15,12 +15,20 @@ export default function Login({ setUser }) {
 
     if (email === "" || password === "") {
       setError(true);
-      console.log("Campos vacios");
+      return;
+    } else if (email === "alumno@unitec.edu" && password === "password") {
+      setError(false);
+      setUser(email);
+      console.log("Iniciado sesion como ALUMNO");
+      return;
+    } else if (email === "profe@unitec.edu" && password === "password") {
+      setError(false);
+      setUser(email);
+      console.log("Iniciado sesion como DOCENTE");
       return;
     }
-
-    setError(false);
-    setUser([email]);
+    setError(true);
+    return;
   };
 
   return (
@@ -54,7 +62,7 @@ export default function Login({ setUser }) {
 
           <button id="iniciarSesionbtn">Iniciar Sesion</button>
         </form>
-        {error && <p>Todos los campos son obligatorios</p>}
+        {error && <p>Ha ocurrido un error al iniciar sesion!!!</p>}
       </div>
 
       <img id="vector" src={vector} />

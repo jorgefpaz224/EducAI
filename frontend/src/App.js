@@ -2,17 +2,17 @@ import React, { useState } from "react";
 import "./App.css";
 import Login from "./components/Login";
 import Calificaciones from "./components/Calificaciones";
-import Navbar from "./components/Navbar";
+import MainContent from "./components/MainContent";
 
 function App() {
-  const [user, setUser] = useState([]);
+  const [user, setUser] = useState("");
 
   return (
     <div className="App">
       {!user.length > 0 ? (
         <Login setUser={setUser} />
       ) : (
-        <Calificaciones user={user} setUser={setUser} />
+        <MainContent user={user} setUser={setUser}/>
       )}
     </div>
   );
