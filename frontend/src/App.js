@@ -9,7 +9,7 @@ import Navbar from "./components/Navbar";
 
 function App() {
   const [user, setUser] = useState("");
-  const [currentView, setCurrentView] = useState("");
+  const [currentView, setCurrentView] = useState("NuestrosServicios");
 
   const renderView = () => {
     if (user === "alumno@unitec.edu") {

@@ -17,13 +17,12 @@ const Navbar = ({ user, setCurrentView, setUser }) => {
 
       <div id="menuItems">
         {navbarItems[user]?.map((item, index) => (
-          <button
+          <a
             key={index}
-            onClick={() => setCurrentView(item.path)} // Cambia la vista actual según el ítem seleccionado
-            className="navbar-button"
+            onClick={() => setCurrentView(item.path)}
           >
             {item.label}
-          </button>
+          </a>
         ))}
       </div>
 
