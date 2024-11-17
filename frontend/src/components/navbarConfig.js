@@ -7,5 +7,6 @@ export const navbarItems = {
   "docente@unitec.edu": [
     { label: "Cursos", path: "Cursos" },
     { label: "Tutorias", path: "Tutorias" },
+    { label: "Nuestros Servicios", path: "NuestrosServicios" },
   ],
 };

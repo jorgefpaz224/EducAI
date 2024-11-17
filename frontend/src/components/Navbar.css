@@ -5,6 +5,7 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 120px;
+  border-bottom: 2px solid grey;
 }
 
 #logonav {

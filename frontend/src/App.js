@@ -29,6 +29,8 @@ function App() {
           return <Cursos />;
         case "Tutorias":
           return <Tutorias />;
+        case "NuestrosServicios":
+          return <NuestrosServicios />;
         default:
           return <h2>Bienvenido, selecciona una opción del menú</h2>;
       }
