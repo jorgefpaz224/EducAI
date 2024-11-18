@@ -1,10 +1,10 @@
 export const navbarItems = {
-  "alumno@unitec.edu": [
+  "Alumno": [
     { label: "Calificaciones", path: "Calificaciones" },
     { label: "Tutorias", path: "Tutorias" },
     { label: "Nuestros Servicios", path: "NuestrosServicios" },
   ],
-  "docente@unitec.edu": [
+  "Maestro": [
     { label: "Cursos", path: "Cursos" },
     { label: "Tutorias", path: "Tutorias" },
     { label: "Nuestros Servicios", path: "NuestrosServicios" },
