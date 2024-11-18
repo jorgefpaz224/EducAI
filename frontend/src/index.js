@@ -18,11 +18,6 @@ const router = createBrowserRouter([
     errorElement: <NotFound />,
   },
   {
-    path: "/bienvenida",
-    element: <Bienvenida />,
-    errorElement: <NotFound />,
-  },
-  {
     path: "/main",
     element: <MainContent />,
 

@@ -1,15 +1,14 @@
 import React from "react";
 import "./Navbar.css";
-import { navbarItems } from "./navbarConfig";
+import { navbarItems } from "./NavbarConfig";
+
+import { NavLink } from "react-router-dom";
 
 /*Import Assets */
 import logo from "../assets/EducAIlogo.png";
 
-const Navbar = ({ user, setCurrentView, setUser }) => {
-  const handleLogout = () => {
-    setUser("");
-    localStorage.clear();
-  };
+
+const Navbar = () => {
 
   return (
     <nav className="navbar">
@@ -18,18 +17,18 @@ const Navbar = ({ user, setCurrentView, setUser }) => {
       </div>
 
       <div id="menuItems">
-        {navbarItems[user]?.map((item, index) => (
-          <a
+        {navbarItems["alumno@unitec.edu"]?.map((item, index) => (
+          <NavLink
             key={index}
-            onClick={() => setCurrentView(item.path)}
+            to = {item.path}
           >
             {item.label}
-          </a>
+          </NavLink>
         ))}
       </div>
 
       <div id="cerrarSesion">
-        <button onClick={handleLogout}>Cerrar Sesión</button>
+        <button>Cerrar Sesión</button>
       </div>
     </nav>
   );
