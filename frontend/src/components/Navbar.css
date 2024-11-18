@@ -1,47 +1,49 @@
 nav {
-  /*Layout*/
-  display: flex;
-  padding: 20px 32px;
-  justify-content: center;
-  align-items: center;
-  gap: 120px;
-}
-
-#logonav {
-  height: 44px;
-  width: 140px;
-}
-
-a {
-  width: 260px;
-}
-a:hover {
-  cursor: pointer;
-  border-bottom: 2px solid #e37f59;
-}
-
-#cerrarSesion {
-  display: flex;
-  padding: 0px 6px;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 10px;
-  flex: 1 0 0;
-
-  button {
     /*Layout*/
     display: flex;
-    padding: 12px 12px;
+    padding: 20px 32px;
     justify-content: center;
     align-items: center;
-    gap: 8px;
-
-    /*Style*/
-    border: none;
-    border-radius: 8px;
-    background: #e37f59;
+    gap: 120px;
+    border-bottom: 2px solid grey;
   }
-  :hover {
+  
+  #logonav {
+    height: 44px;
+    width: 140px;
+  }
+  
+  a {
+    width: 260px;
+  }
+  a:hover {
     cursor: pointer;
+    border-bottom: 2px solid #e37f59;
   }
-}
+  
+  #cerrarSesion {
+    display: flex;
+    padding: 0px 6px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    flex: 1 0 0;
+  
+    button {
+      /*Layout*/
+      display: flex;
+      padding: 12px 12px;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+  
+      /*Style*/
+      border: none;
+      border-radius: 8px;
+      background: #e37f59;
+    }
+    :hover {
+      cursor: pointer;
+    }
+  }
+  

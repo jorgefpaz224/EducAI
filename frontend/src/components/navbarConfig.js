@@ -1,11 +1,13 @@
 export const navbarItems = {
-  "alumno@unitec.edu": [
-    { label: "Calificaciones", path: "Calificaiones" },
-    { label: "Tutorias", path: "Tutorias" },
-    { label: "Nuestros Servicios", path: "NuestrosServicios" },
-  ],
-  "docente@unitec.edu": [
-    { label: "Cursos", path: "Cursos" },
-    { label: "Tutorias", path: "Tutorias" },
-  ],
-};
+    "alumno@unitec.edu": [
+      { label: "Calificaciones", path: "/main/bienvenida" },
+      { label: "Tutorias", path: "" }, //por agregar
+      { label: "Nuestros Servicios", path: "/main/nuestrosServicios" },
+    ],
+    "docente@unitec.edu": [
+      { label: "Cursos", path: "" }, //por agregar
+      { label: "Tutorias", path: "" }, //por agregar
+      { label: "Nuestros Servicios", path: "/main/nuestrosServicios" },
+    ],
+  };
+  

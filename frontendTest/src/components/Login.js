@@ -21,7 +21,7 @@ export default function Login({ setUser }) {
       setUser(email);
       console.log("Iniciado sesion como ALUMNO");
       return;
-    } else if (email === "profe@unitec.edu" && password === "password") {
+    } else if (email === "docente@unitec.edu" && password === "password") {
       setError(false);
       setUser(email);
       console.log("Iniciado sesion como DOCENTE");
