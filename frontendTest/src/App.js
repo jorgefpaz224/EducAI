@@ -12,7 +12,7 @@ function App() {
   const [currentView, setCurrentView] = useState("NuestrosServicios");
 
   const renderView = () => {
-    if (user === "alumno@unitec.edu") {
+    if (user === "Alumno") {
       switch (currentView) {
         case "Calificaciones":
           return <Calificaciones />;
@@ -23,7 +23,7 @@ function App() {
         default:
           return <h2>Bienvenido, selecciona una opción del menú</h2>;
       }
-    } else if (user === "docente@unitec.edu") {
+    } else if (user === "Maestro") {
       switch (currentView) {
         case "Cursos":
           return <Cursos />;
