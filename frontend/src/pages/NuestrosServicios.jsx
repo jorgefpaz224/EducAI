@@ -1,10 +1,11 @@
 import React from "react";
+/*Import Assets*/ 
 import logo from "../assets/EducAIlogo.png";
 import notas from "../assets/notas.png";
 import tutoria from "../assets/tutorias.png";
 import chatbot from "../assets/GatitoAkshually.png";
-import cubo from "../svgs/box.svg";
-import "./NuestrosServicios.css";
+
+import './NuestrosServicios.css'
 
 function NuestrosServicios() {
   return (
@@ -16,7 +17,7 @@ function NuestrosServicios() {
 
       <div id="todo">
         <div className="contenido-NuestrosServicios" id="chatbot">
-        <div className="contenido-texto">
+          <div className="contenido-texto">
             <h1 className="headline">AI-Chatbot</h1>
             <p className="body">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -29,7 +30,9 @@ function NuestrosServicios() {
             </p>
           </div>
           <div className="contenido-imagen">
-            <button className="boton-ns" id = "boton-chatbot">Abrir Chatbot</button>
+            <button className="boton-ns" id="boton-chatbot">
+              Abrir Chatbot
+            </button>
             <img src={chatbot} />
           </div>
         </div>
@@ -51,7 +54,9 @@ function NuestrosServicios() {
             </p>
           </div>
           <div className="contenido-imagen">
-            <button className="boton-ns" id = "boton-notas">Ver mis notas</button>
+            <button className="boton-ns" id="boton-notas">
+              Ver mis notas
+            </button>
             <img src={notas} />
           </div>
         </div>
@@ -70,7 +75,9 @@ function NuestrosServicios() {
             </p>
           </div>
           <div className="contenido-imagen">
-            <button className="boton-ns" id="boton-tutorias">Agendar Tutorias</button>
+            <button className="boton-ns" id="boton-tutorias">
+              Agendar Tutorias
+            </button>
             <img src={tutoria} />
           </div>
         </div>
