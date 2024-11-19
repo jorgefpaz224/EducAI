@@ -24,13 +24,11 @@ const Navbar = () => {
         <img id="logonav" src={logo} alt="EducAI Logo" />
       </div>
 
-      <div id="menuItems">
         {navbarItems[user]?.map((item, index) => (
           <NavLink key={index} to={item.path} state={{ user: user }}>
             {item.label}
           </NavLink>
         ))}
-      </div>
 
       <div id="cerrarSesion">
         <button onClick={handleLogout}>Cerrar Sesión</button>

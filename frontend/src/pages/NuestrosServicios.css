@@ -1,0 +1,104 @@
+#banner {
+    background-color: #bde359;
+    height: 250px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+  }
+  
+  #logo-nuestros-servicios {
+    height: 102px;
+    width: 320px;
+  }
+  
+  #todo {
+    display: flex;
+    flex-direction: column;
+    padding: 45px;
+    gap: 32px;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  
+  .contenido-NuestrosServicios {
+    /*Style*/
+    border-radius: 45px;
+    width: 800px;
+    height: 300px;
+    text-align: left;
+  
+    /*Layout*/
+    display: flex;
+    padding: 40px 32px 0px 32px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+    overflow: hidden;
+  }
+  
+  .contenido-texto {
+    display: flex;
+    width: 493px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 19px;
+  }
+  
+  .contenido-imagen {
+    /*Layout*/
+    display: flex;
+    width: 249px;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+  
+  .boton-ns {
+    /*Style*/
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    width: 127px;
+    height: 40px;
+    color: #fff;
+  }
+  #boton-chatbot{
+      background-color: #5978E3;
+  }
+  #boton-notas{
+      background-color: #AE6042;
+  }
+  #boton-tutorias{
+      background-color: #789136;
+  }
+  button:hover{
+      cursor: pointer;
+  }
+  
+  #chatbot {
+    background-color: #c1c9f4;
+    color: #1f3678;
+    h1 {
+      color: #1f3678;
+    }
+    img {
+      width: 202px;
+      height: 196px;
+    }
+  }
+  #calificaciones-automaticas {
+    background-color: #edb3a4;
+    color: #4e2819;
+  
+    h1 {
+      color: #4e2819;
+    }
+  }
+  #tutorias {
+    background-color: #bde359;
+  }
+  
