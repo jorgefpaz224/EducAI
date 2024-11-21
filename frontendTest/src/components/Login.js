@@ -10,10 +10,12 @@ export default function Login({ setUser }) {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setError(""); 
 
     if (email === "" || password === "") {
+      setError("Por favor, complete todos los campos.");
       setError(true);
       return;
     } else if (email === "alumno@unitec.edu" && password === "password") {
@@ -27,19 +29,56 @@ export default function Login({ setUser }) {
       console.log("Iniciado sesion como DOCENTE");
       return;
     }
-    setError(true);
-    return;
+
+    try {
+      let response;
+
+      response = await fetch("http://localhost:5000/api/verificar-estudiante", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ correo: email, contrasena: password }),
+      });
+
+      if (response.ok) {
+        const estudiante = await response.json();
+        setUser(estudiante.PrimerNombre);
+        console.log("Iniciado sesión como ALUMNO");
+        return;
+      }
+
+      response = await fetch("http://localhost:5000/api/verificar-maestro", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ correo: email, contrasena: password }),
+      });
+
+      if (response.ok) {
+        const maestro = await response.json();
+        setUser(maestro.PrimerNombre);
+        console.log("Iniciado sesión como DOCENTE");
+        return;
+      }
+
+      setError("Credenciales incorrectas.");
+    } catch (err) {
+      console.error("Error al iniciar sesión:", err);
+      setError("Error al conectar con el servidor.");
+    }
   };
 
   return (
     <div id="content">
       <div id="login-page">
-        <img id="logo" src={logo} />
+        <img id="logo" src={logo} alt="Logo" />
 
         <form id="contenido-login" onSubmit={handleSubmit}>
-          <h1 id="texto">Iniciar Sesion</h1>
+          <h1 id="texto">Iniciar Sesión</h1>
           <div className="field" id="email-input">
-            <label>Correo Electronico</label>
+            <label>Correo Electrónico</label>
             <InputGroup
               type="email"
               id="email"
@@ -60,13 +99,13 @@ export default function Login({ setUser }) {
             />
           </div>
 
-          <button id="iniciarSesionbtn">Iniciar Sesion</button>
+          <button id="iniciarSesionbtn">Iniciar Sesión</button>
         </form>
-        {error && <p>Ha ocurrido un error al iniciar sesion!!!</p>}
+        {error && <p className="error">{error}</p>}
       </div>
 
-      <img id="vector" src={vector} />
-      <img id="gatito" src={gatito} />
+      <img id="vector" src={vector} alt="Vector" />
+      <img id="gatito" src={gatito} alt="Gatito" />
     </div>
   );
 }
