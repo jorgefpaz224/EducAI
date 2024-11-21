@@ -1,8 +1,8 @@
-.navbar {
+nav {
   /*Layout*/
   display: flex;
   padding: 20px 32px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 120px;
   border-bottom: 2px solid grey;
@@ -14,18 +14,7 @@
 }
 
 a {
-  /*Layout*/
-  display: flex;
-  width: 259px;
-  padding: 3px 0px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 4px;
-  flex-shrink: 0;
-  text-decoration: none;
-  color: gray;
-
+  width: 260px;
 }
 a:hover {
   cursor: pointer;

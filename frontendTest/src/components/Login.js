@@ -16,6 +16,17 @@ export default function Login({ setUser }) {
 
     if (email === "" || password === "") {
       setError("Por favor, complete todos los campos.");
+      setError(true);
+      return;
+    } else if (email === "alumno@unitec.edu" && password === "password") {
+      setError(false);
+      setUser(email);
+      console.log("Iniciado sesion como ALUMNO");
+      return;
+    } else if (email === "docente@unitec.edu" && password === "password") {
+      setError(false);
+      setUser(email);
+      console.log("Iniciado sesion como DOCENTE");
       return;
     }
 

@@ -4,8 +4,7 @@ import Navbar from "./Navbar";
 const Calificaciones = ({ user, setUser }) => {
   return (
     <div>
-      <Navbar setUser={setUser} />
-      <h1>Bienvenido Alumno {user}</h1>
+      <h1>BIENVENIDO AL APARTADO DE Calificaciones</h1>
     </div>
   );
 }

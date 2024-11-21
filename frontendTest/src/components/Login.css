@@ -35,7 +35,7 @@
 }
 
 h1 {
-  color: var(--primary-600, var(--tertiary-600, #3a4716));
+  color:#3a4716;
   font-size: 40px;
   display: flex;
   height: 42px;

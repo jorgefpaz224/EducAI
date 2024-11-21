@@ -4,8 +4,7 @@ import Navbar from "./Navbar";
 const Cursos = ({ user, setUser }) => {
   return (
     <div>
-      <Navbar setUser={setUser} />
-      <h1>Bienvenido Docente {user}</h1>
+      <h1>BIENVENIDO AL APARTADO DE Cursos {user}</h1>
     </div>
   );
 }
