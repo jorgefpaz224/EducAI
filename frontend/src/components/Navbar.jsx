@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.css";
-import { navbarItems } from "./NavbarConfig";
+import { navbarItems } from "./navbarConfig";
 import { useContext } from "react";
 import { Context } from "../MainContent";
 
