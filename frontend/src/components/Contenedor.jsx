@@ -1,18 +1,21 @@
-const Contenedor = ({ tipo, image, porcentaje, nombreClase, boton }) => {
+import './Contenedor.css';
+
+const Contenedor = ({ tipo, image, porcentaje, puntosEvaluados, nombreClase, boton }) => {
   if (tipo === "claseContenedor") {
     return (
-      <div>
-        <img src={image}></img>
+      <div className={tipo}>
+        <img id = "imgClase" src={image}></img>
         <h1>{porcentaje}</h1>
-        <label>{nombreClase}</label>
+        <label>{puntosEvaluados}</label>
+        <h2>{nombreClase}</h2>
       </div>
     );
   }else if(tipo === "personaContenedor"){
     return (
-        <div>
+        <div className={tipo}>
           <img src={image}></img>
           <h1>{porcentaje}</h1>
-          <label>{nombreClase}</label>
+          <h2>{nombreClase}</h2>
           <button></button>
         </div>
       );

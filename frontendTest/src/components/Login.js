@@ -32,7 +32,7 @@ export default function Login({ setUser }) {
 
       if (response.ok) {
         const estudiante = await response.json();
-        setUser("Alumno");
+        setUser(estudiante.PrimerNombre);
         console.log("Iniciado sesión como ALUMNO");
         return;
       }
@@ -47,7 +47,7 @@ export default function Login({ setUser }) {
 
       if (response.ok) {
         const maestro = await response.json();
-        setUser("Maestro");
+        setUser(maestro.PrimerNombre);
         console.log("Iniciado sesión como DOCENTE");
         return;
       }

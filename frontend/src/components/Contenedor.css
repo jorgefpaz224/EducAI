@@ -1,0 +1,11 @@
+.claseContenedor {
+  /*Layout*/
+  width: 260px;
+  height: 328px;
+  flex-shrink: 0;
+  padding: 15px 15px;
+
+  /*Style*/
+  border-radius: 45px;
+  background: #c1c9f4;
+}

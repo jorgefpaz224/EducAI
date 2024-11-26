@@ -1,14 +1,22 @@
 import React from "react";
 import "./Navbar.css";
-import { navbarItems } from "./NavbarConfig";
+import { navbarItems } from "./navbarConfig";
+import { useContext } from "react";
+import { Context } from "../MainContent";
 
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 /*Import Assets */
 import logo from "../assets/EducAIlogo.png";
 
-
 const Navbar = () => {
+  const user = useContext(Context);
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    navigate("/", { state: { user: undefined } });
+    localStorage.clear();
+  };
 
   return (
     <nav className="navbar">
@@ -16,19 +24,14 @@ const Navbar = () => {
         <img id="logonav" src={logo} alt="EducAI Logo" />
       </div>
 
-      <div id="menuItems">
-        {navbarItems["alumno@unitec.edu"]?.map((item, index) => (
-          <NavLink
-            key={index}
-            to = {item.path}
-          >
+        {navbarItems[user]?.map((item, index) => (
+          <NavLink key={index} to={item.path} state={{ user: user }}>
             {item.label}
           </NavLink>
         ))}
-      </div>
 
       <div id="cerrarSesion">
-        <button>Cerrar Sesión</button>
+        <button onClick={handleLogout}>Cerrar Sesión</button>
       </div>
     </nav>
   );

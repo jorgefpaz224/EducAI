@@ -1,0 +1,76 @@
+#content {
+    align-items: center;
+  }
+  
+  #gatito {
+    height: 618px;
+    width: 645px;
+    position: absolute;
+    bottom: 0px;
+    right: 50px;
+  }
+  
+  #vector {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 80vw;
+    z-index: -1;
+  }
+  
+  .field {
+    /*Layout*/
+    align-items: flex-start;
+    align-self: stretch;
+  
+    input {
+      /*Layout*/
+      width: 460px;
+      padding: 16px 12px;
+  
+      /*Style*/
+      border-radius: 8px;
+      border: 1px solid #789136;
+    }
+  }
+  
+  #texto {
+    color:#3a4716;
+    font-size: 40px;
+    display: flex;
+    height: 42px;
+    flex-direction: column;
+    justify-content: center;
+    align-self: stretch;
+  }
+  
+  #iniciarSesionbtn {
+    /*Layout*/
+    width: 260px;
+    padding: 12px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  
+    /*Style*/
+    background-color: #bde359;
+    border-radius: 8px;
+    border: none;
+  }
+  
+  #iniciarSesionbtn:hover {
+    cursor: pointer;
+  }
+  
+  #contenido-login {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  
+  #login-page {
+    padding: 60px;
+  }
+  
