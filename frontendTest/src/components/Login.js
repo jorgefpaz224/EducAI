@@ -16,17 +16,6 @@ export default function Login({ setUser }) {
 
     if (email === "" || password === "") {
       setError("Por favor, complete todos los campos.");
-      setError(true);
-      return;
-    } else if (email === "alumno@unitec.edu" && password === "password") {
-      setError(false);
-      setUser(email);
-      console.log("Iniciado sesion como ALUMNO");
-      return;
-    } else if (email === "docente@unitec.edu" && password === "password") {
-      setError(false);
-      setUser(email);
-      console.log("Iniciado sesion como DOCENTE");
       return;
     }
 
@@ -70,42 +59,43 @@ export default function Login({ setUser }) {
     }
   };
 
+
   return (
     <div id="content">
-      <div id="login-page">
-        <img id="logo" src={logo} alt="Logo" />
+    <div id="login-page">
+      <img id="logo" src={logo} alt="Logo" />
 
-        <form id="contenido-login" onSubmit={handleSubmit}>
-          <h1 id="texto">Iniciar Sesión</h1>
-          <div className="field" id="email-input">
-            <label>Correo Electrónico</label>
-            <InputGroup
-              type="email"
-              id="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="correo@edu.com"
-            />
-          </div>
+      <form id="contenido-login" onSubmit={handleSubmit}>
+        <h1 id="texto">Iniciar Sesión</h1>
+        <div className="field" id="email-input">
+          <label>Correo Electrónico</label>
+          <InputGroup
+            type="email"
+            id="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="correo@edu.com"
+          />
+        </div>
 
-          <div className="field" id="password-input">
-            <label>Contraseña</label>
-            <InputGroup
-              type="password"
-              id="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              placeholder="***********"
-            />
-          </div>
+        <div className="field" id="password-input">
+          <label>Contraseña</label>
+          <InputGroup
+            type="password"
+            id="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            placeholder="***********"
+          />
+        </div>
 
-          <button id="iniciarSesionbtn">Iniciar Sesión</button>
-        </form>
-        {error && <p className="error">{error}</p>}
-      </div>
-
-      <img id="vector" src={vector} alt="Vector" />
-      <img id="gatito" src={gatito} alt="Gatito" />
+        <button id="iniciarSesionbtn">Iniciar Sesión</button>
+      </form>
+      {error && <p className="error">{error}</p>}
     </div>
-  );
+
+    <img id="vector" src={vector} alt="Vector" />
+    <img id="gatito" src={gatito} alt="Gatito" />
+  </div>
+);
 }
