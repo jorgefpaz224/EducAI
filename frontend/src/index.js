@@ -10,6 +10,8 @@ import NuestrosServicios from "./pages/NuestrosServicios";
 import NotFound from "./pages/NotFound";
 import MainContent from "./MainContent";
 import Bienvenida from "./pages/Bienvenida";
+import Tutorias from "./pages/Tutorias";
+import AgendarTutorias from './pages/AgendarTutoria';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +31,14 @@ const router = createBrowserRouter([
       {
         path: "/main/nuestrosServicios",
         element: <NuestrosServicios />,
+      },
+      {
+        path: "/main/tutorias",
+        element: <Tutorias />,
+      },
+      {
+        path: "/main/agendarTutorias",
+        element: <AgendarTutorias />,
       },
     ],
   },

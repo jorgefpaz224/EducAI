@@ -11,7 +11,7 @@ function NuestrosServicios() {
   return (
     <div>
       <div id="banner">
-        <img id="logo-nuestros-servicios" src={logo} />
+        <img id="logo-nuestros-servicios" src={logo} alt="" />
         <h1 className="headline">Servicios</h1>
       </div>
 
@@ -33,7 +33,7 @@ function NuestrosServicios() {
             <button className="boton-ns" id="boton-chatbot">
               Abrir Chatbot
             </button>
-            <img src={chatbot} />
+            <img src={chatbot} alt=''/>
           </div>
         </div>
 
@@ -57,7 +57,7 @@ function NuestrosServicios() {
             <button className="boton-ns" id="boton-notas">
               Ver mis notas
             </button>
-            <img src={notas} />
+            <img src={notas} alt=''/>
           </div>
         </div>
 
@@ -78,7 +78,7 @@ function NuestrosServicios() {
             <button className="boton-ns" id="boton-tutorias">
               Agendar Tutorias
             </button>
-            <img src={tutoria} />
+            <img src={tutoria} alt=''/>
           </div>
         </div>
       </div>
