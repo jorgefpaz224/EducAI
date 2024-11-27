@@ -4,7 +4,6 @@
   padding: 20px 32px;
   justify-content: space-between;
   align-items: center;
-  gap: 120px;
   border-bottom: 2px solid grey;
 }
 
@@ -13,7 +12,7 @@
   width: 140px;
 }
 
-a {
+.navbar a {
   /*Layout*/
   display: flex;
   width: 259px;
@@ -27,7 +26,7 @@ a {
   color: gray;
 
 }
-a:hover {
+.navbar a:hover {
   cursor: pointer;
   border-bottom: 2px solid #e37f59;
 }

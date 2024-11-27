@@ -17,6 +17,8 @@
 
 #clasesContenedores{
   display: flex;
-  padding: 45px 165px;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 35px 0;
+  justify-content: center;
+  gap: 24px;
 }
