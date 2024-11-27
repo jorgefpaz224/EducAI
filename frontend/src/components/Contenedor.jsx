@@ -63,7 +63,16 @@ const Contenedor = ({
         </button>
       </div>
     );
-  } else {
+  } else if (tipo === "cursoContenedor") {
+    return (
+      <div className={tipo}>
+        <img id="imgClase" src={image} alt=""></img>
+        <label>{puntosEvaluados}</label>
+        <h2>{nombreClase}</h2>
+      </div>
+    );
+  }
+    else {
     <div>Error al cargar componente</div>;
   }
 };

@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid grey;
+  gap: 50px;
 }
 
 #logonav {
@@ -24,7 +25,6 @@
   flex-shrink: 0;
   text-decoration: none;
   color: gray;
-
 }
 .navbar a:hover {
   cursor: pointer;

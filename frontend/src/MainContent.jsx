@@ -9,7 +9,7 @@ export const Context = createContext();
 function MainContent() {
   const location = useLocation();
 
-  const user = 'alumno@unitec.edu';//location.state.user;
+  const user = location.state.user;
 
   return (
     <div>
