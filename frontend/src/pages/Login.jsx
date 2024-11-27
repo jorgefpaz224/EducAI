@@ -37,7 +37,7 @@ function Login() {
   return (
     <div id="content">
       <div id="login-page">
-        <img id="logo" src={logo} />
+        <img id="logo" src={logo} alt=""/>
 
         <form id="contenido-login" onSubmit={handleSubmit}>
           <h1 id="texto">Iniciar Sesion</h1>
@@ -67,8 +67,8 @@ function Login() {
         </form>
       </div>
 
-      <img id="vector" src={vector} />
-      <img id="gatito" src={gatito} />
+      <img id="vector" src={vector} alt="" />
+      <img id="gatito" src={gatito} alt="" />
     </div>
   );
 }
