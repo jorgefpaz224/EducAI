@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import InputGroup from "../components/InputGroup";
 import "./Login.css";
-
+import axios from 'axios';
 /*Import Assets*/
 import gatito from "../assets/GatitoAkshually.png";
 import logo from "../assets/EducAIlogo.png";
@@ -10,28 +10,40 @@ import vector from "../assets/loginVector.png";
 import { useNavigate } from "react-router-dom";
 
 function Login() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
   const navigate = useNavigate();
 
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
-    if (email === "" || password === "") {
-      return;
-    } else if (email === "alumno@unitec.edu" && password === "password") {
-      setEmail(email);
-      console.log("Iniciado sesion como ALUMNO");
-      navigate("/main", { state: { user: email } });
-      return;
-    } else if (email === "docente@unitec.edu" && password === "password") {
-      setEmail(email);
-      console.log("Iniciado sesion como DOCENTE");
-      navigate("/main", { state: { user: email } });
-      return;
+    try {
+      const estudianteResponse = await axios.post('http://localhost:5000/users/verificar-estudiante', { correo: email, contrasena: password });
+      if (estudianteResponse.data) {
+        console.log("Iniciado sesion como ESTUDIANTE");
+        const userState = { user: estudianteResponse.data, userType: 'Alumno' };
+        localStorage.setItem('userState', JSON.stringify(userState));
+        navigate("/main", { state: userState });
+        return;
+      }
+    } catch (error) {
+      // Handle error
     }
-    return;
+
+    try {
+      const maestroResponse = await axios.post('http://localhost:5000/users/verificar-maestro', { correo: email, contrasena: password });
+      if (maestroResponse.data) {
+        console.log("Iniciado sesion como DOCENTE");
+        const userState = { user: maestroResponse.data, userType: 'Maestro' };
+        localStorage.setItem('userState', JSON.stringify(userState));
+        navigate("/main", { state: userState });
+        return;
+      }
+    } catch (error) {
+      // Handle error
+    }
+
+    setError('Correo o contraseña incorrectos');
   };
 
   return (
@@ -64,6 +76,7 @@ function Login() {
           </div>
 
           <button id="iniciarSesionbtn">Iniciar Sesion</button>
+          {error && <p>{error}</p>}
         </form>
       </div>
 

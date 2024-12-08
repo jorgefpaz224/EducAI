@@ -1,19 +1,27 @@
-import React from "react";
-import { Outlet, useLocation } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import { createContext, useState } from "react";
+import { createContext } from "react";
 import Chatbot from "./components/Chatbot";
 
 export const Context = createContext();
 
 function MainContent() {
   const location = useLocation();
+  const navigate = useNavigate();
+  const { user, userType } = location.state || JSON.parse(localStorage.getItem('userState')) || {};
 
-  const user = 'alumno@unitec.edu';//location.state.user;
+  useEffect(() => {
+    if (!user || !userType) {
+      navigate("/");
+    } else {
+      localStorage.setItem('userState', JSON.stringify({ user, userType }));
+    }
+  }, [user, userType, navigate]);
 
   return (
     <div>
-      <Context.Provider value={user}>
+      <Context.Provider value={{ user, userType }}>
         <Navbar />
         <Outlet />
         <Chatbot />
