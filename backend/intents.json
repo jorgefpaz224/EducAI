@@ -1,0 +1,39 @@
+{
+    "intents": [
+      {
+        "tag": "experiencia_usuario",
+        "patterns": [
+          "¿Qué es la experiencia de usuario?",
+          "Define UX",
+          "¿Qué significa experiencia de usuario?",
+          "Explica la experiencia de usuario"
+        ],
+        "responses": [
+          "La experiencia de usuario (UX) se refiere a cómo una persona se siente al interactuar con un sistema o producto. Incluye aspectos de usabilidad, accesibilidad y placer en la interacción."
+        ]
+      },
+      {
+        "tag": "tecnologias_emergentes",
+        "patterns": [
+          "¿Qué son las tecnologías emergentes?",
+          "Define tecnologías emergentes",
+          "Ejemplos de tecnologías emergentes"
+        ],
+        "responses": [
+          "Las tecnologías emergentes son innovaciones técnicas que están en desarrollo o se espera que lo estén en los próximos años, y que pueden alterar el status quo. Ejemplos incluyen la inteligencia artificial, blockchain y la computación cuántica."
+        ]
+      },
+      {
+        "tag": "compuertas_logicas",
+        "patterns": [
+          "¿Qué son las compuertas lógicas?",
+          "Define compuerta lógica",
+          "Tipos de compuertas lógicas"
+        ],
+        "responses": [
+          "Las compuertas lógicas son dispositivos electrónicos que realizan operaciones booleanas básicas, fundamentales en circuitos digitales. Los tipos principales son AND, OR, NOT, NAND, NOR, XOR y XNOR."
+        ]
+      }
+    ]
+  }
+  
