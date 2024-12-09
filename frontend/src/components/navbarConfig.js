@@ -6,7 +6,6 @@ export const navbarItems = {
   ],
   "Maestro": [
     { label: "Cursos", path: "/main" }, //por agregar
-    { label: "Tutorias", path: "" }, //por agregar
     { label: "Nuestros Servicios", path: "/main/nuestrosServicios" },
   ],
 };

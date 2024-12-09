@@ -1,0 +1,2364 @@
+{
+  "intents": [
+    {
+      "tag": "algebra_variables",
+      "patterns": [
+        "¿Qué es una variable en álgebra?",
+        "Explícame el concepto de variable"
+      ],
+      "responses": [
+        "En álgebra, una variable es un símbolo, generalmente una letra, que representa un valor desconocido o que puede cambiar."
+      ]
+    },
+    {
+      "tag": "algebra_ecuaciones_lineales",
+      "patterns": [
+        "¿Qué es una ecuación lineal?",
+        "Dame ejemplos de ecuaciones lineales"
+      ],
+      "responses": [
+        "Una ecuación lineal es una ecuación de primer grado que puede representarse en la forma ax + b = 0, donde a y b son constantes."
+      ]
+    },
+    {
+      "tag": "algebra_funcion_cuadratica",
+      "patterns": [
+        "¿Qué es una función cuadrática?",
+        "Explícame las funciones cuadráticas"
+      ],
+      "responses": [
+        "Una función cuadrática es una función de la forma f(x) = ax² + bx + c, donde a, b y c son constantes, y a ≠ 0."
+      ]
+    },
+    {
+      "tag": "algebra_sistemas_ecuaciones",
+      "patterns": [
+        "¿Cómo resolver un sistema de ecuaciones?",
+        "Dame un ejemplo de resolver sistemas de ecuaciones"
+      ],
+      "responses": [
+        "Un sistema de ecuaciones puede resolverse mediante métodos como sustitución, igualación o eliminación para encontrar valores de las variables."
+      ]
+    },
+    {
+      "tag": "algebra_factorizacion",
+      "patterns": [
+        "¿Qué es la factorización?",
+        "Explícame cómo factorizar un polinomio"
+      ],
+      "responses": [
+        "La factorización es el proceso de descomponer un polinomio en el producto de factores más simples que al multiplicarse resultan en el polinomio original."
+      ]
+    },
+    {
+      "tag": "algebra_matrices",
+      "patterns": [
+        "¿Qué es una matriz en álgebra?",
+        "Dame un ejemplo de matriz"
+      ],
+      "responses": [
+        "Una matriz es una disposición rectangular de números en filas y columnas, que se utiliza para representar sistemas de ecuaciones o transformaciones lineales."
+      ]
+    },
+    {
+      "tag": "algebra_determinantes",
+      "patterns": [
+        "¿Qué es un determinante?",
+        "¿Cómo calcular un determinante?"
+      ],
+      "responses": [
+        "El determinante es un valor escalar asociado con una matriz cuadrada, utilizado para resolver sistemas de ecuaciones y analizar propiedades de la matriz."
+      ]
+    },
+    {
+      "tag": "algebra_numeros_reales",
+      "patterns": [
+        "¿Qué son los números reales?",
+        "Explícame los conjuntos de números reales"
+      ],
+      "responses": [
+        "Los números reales son el conjunto de todos los números que incluyen los racionales (fracciones) y los irracionales (como π y √2)."
+      ]
+    },
+    {
+      "tag": "algebra_valor_absoluto",
+      "patterns": [
+        "¿Qué es el valor absoluto?",
+        "Dame ejemplos de valor absoluto"
+      ],
+      "responses": [
+        "El valor absoluto de un número es su distancia desde el cero en la recta numérica, sin importar la dirección. Por ejemplo, |−5| = 5."
+      ]
+    },
+    {
+      "tag": "algebra_raiz_cuadrada",
+      "patterns": [
+        "¿Qué es una raíz cuadrada?",
+        "Explícame cómo calcular raíces cuadradas"
+      ],
+      "responses": [
+        "La raíz cuadrada de un número es otro número que, al multiplicarse por sí mismo, da como resultado el número original. Por ejemplo, la raíz cuadrada de 9 es 3."
+      ]
+    },
+    {
+      "tag": "algebra_polinomios",
+      "patterns": [
+        "¿Qué es un polinomio?",
+        "Explícame los grados de un polinomio"
+      ],
+      "responses": [
+        "Un polinomio es una expresión algebraica formada por términos separados por signos de suma o resta, como 3x² + 2x - 5. El grado del polinomio es el exponente más alto de sus términos."
+      ]
+    },
+    {
+      "tag": "algebra_ecuaciones_cuadraticas",
+      "patterns": [
+        "¿Cómo se resuelve una ecuación cuadrática?",
+        "Dame la fórmula general para ecuaciones cuadráticas"
+      ],
+      "responses": [
+        "Una ecuación cuadrática se resuelve usando la fórmula general: x = (-b ± √(b² - 4ac)) / 2a, donde a, b y c son los coeficientes de la ecuación ax² + bx + c = 0."
+      ]
+    },
+    {
+      "tag": "algebra_propiedades_exponentes",
+      "patterns": [
+        "¿Cuáles son las propiedades de los exponentes?",
+        "Explícame cómo operar con exponentes"
+      ],
+      "responses": [
+        "Algunas propiedades de los exponentes son: a^m * a^n = a^(m+n), (a^m)^n = a^(m*n), y a^0 = 1 (cuando a ≠ 0)."
+      ]
+    },
+    {
+      "tag": "algebra_logaritmos",
+      "patterns": [
+        "¿Qué es un logaritmo?",
+        "Explícame cómo funcionan los logaritmos"
+      ],
+      "responses": [
+        "Un logaritmo es el exponente al que se debe elevar una base para obtener un número dado. Por ejemplo, log₂8 = 3 porque 2³ = 8."
+      ]
+    },
+    {
+      "tag": "algebra_productos_notables",
+      "patterns": [
+        "¿Qué son los productos notables?",
+        "Dame ejemplos de productos notables"
+      ],
+      "responses": [
+        "Los productos notables son identidades algebraicas que simplifican cálculos, como (a + b)² = a² + 2ab + b² y (a - b)² = a² - 2ab + b²."
+      ]
+    },
+    {
+      "tag": "algebra_sistemas_ecuaciones_lineales",
+      "patterns": [
+        "¿Qué es un sistema de ecuaciones lineales?",
+        "¿Cómo resolver sistemas con el método de Gauss?"
+      ],
+      "responses": [
+        "Un sistema de ecuaciones lineales es un conjunto de ecuaciones de primer grado que se resuelve para encontrar valores comunes de las variables. El método de Gauss usa operaciones matriciales para simplificar y resolver."
+      ]
+    },
+    {
+      "tag": "algebra_inecuaciones",
+      "patterns": [
+        "¿Qué es una inecuación?",
+        "¿Cómo se resuelven las inecuaciones?"
+      ],
+      "responses": [
+        "Una inecuación es una desigualdad algebraica que establece relaciones de mayor, menor o igual entre expresiones. Se resuelve aislando la variable y cuidando las reglas de signos al multiplicar o dividir por valores negativos."
+      ]
+    },
+    {
+      "tag": "algebra_graficas",
+      "patterns": [
+        "¿Cómo graficar una función lineal?",
+        "Explícame cómo interpretar gráficas algebraicas"
+      ],
+      "responses": [
+        "Para graficar una función lineal, usa la forma y = mx + b, donde m es la pendiente y b es la intersección con el eje y. Traza puntos y conecta con una línea recta."
+      ]
+    },
+    {
+      "tag": "algebra_suma_restas_polinomios",
+      "patterns": [
+        "¿Cómo sumar polinomios?",
+        "Explícame cómo restar polinomios"
+      ],
+      "responses": [
+        "Para sumar o restar polinomios, combina los términos semejantes, es decir, aquellos con las mismas variables y exponentes."
+      ]
+    },
+    {
+      "tag": "algebra_identidades_algebraicas",
+      "patterns": [
+        "¿Qué son las identidades algebraicas?",
+        "Dame ejemplos de identidades algebraicas"
+      ],
+      "responses": [
+        "Las identidades algebraicas son igualdades que se cumplen para todos los valores de las variables, como (a + b)² = a² + 2ab + b² o (a - b)(a + b) = a² - b²."
+      ]
+    },
+    {
+      "tag": "algebra_ecuaciones_racionales",
+      "patterns": [
+        "¿Qué es una ecuación racional?",
+        "¿Cómo resolver ecuaciones racionales?"
+      ],
+      "responses": [
+        "Una ecuación racional es aquella que contiene fracciones algebraicas. Para resolverlas, elimina los denominadores multiplicando por el mínimo común denominador y simplifica."
+      ]
+    },
+    {
+      "tag": "algebra_ecuaciones_exponenciales",
+      "patterns": [
+        "¿Qué es una ecuación exponencial?",
+        "¿Cómo se resuelven las ecuaciones exponenciales?"
+      ],
+      "responses": [
+        "Una ecuación exponencial es aquella donde la variable aparece como exponente, por ejemplo, 2^x = 8. Se resuelve aplicando logaritmos o igualando las bases."
+      ]
+    },
+    {
+      "tag": "algebra_sistemas_no_lineales",
+      "patterns": [
+        "¿Qué son los sistemas de ecuaciones no lineales?",
+        "Dame ejemplos de sistemas no lineales"
+      ],
+      "responses": [
+        "Los sistemas de ecuaciones no lineales incluyen al menos una ecuación que no es de primer grado, como x² + y² = 1. Se resuelven por sustitución o métodos gráficos."
+      ]
+    },
+    {
+      "tag": "algebra_propiedades_igualdad",
+      "patterns": [
+        "¿Cuáles son las propiedades de la igualdad?",
+        "Explícame las reglas de la igualdad"
+      ],
+      "responses": [
+        "Las propiedades de la igualdad incluyen: reflexiva (a = a), simétrica (si a = b, entonces b = a), y transitiva (si a = b y b = c, entonces a = c)."
+      ]
+    },
+    {
+      "tag": "algebra_fracciones_algebraicas",
+      "patterns": [
+        "¿Qué son las fracciones algebraicas?",
+        "¿Cómo simplificar fracciones algebraicas?"
+      ],
+      "responses": [
+        "Una fracción algebraica tiene un polinomio en el numerador y/o denominador. Se simplifica factorizando y cancelando factores comunes."
+      ]
+    },
+    {
+      "tag": "algebra_division_polinomios",
+      "patterns": [
+        "¿Cómo dividir polinomios?",
+        "Explícame la división sintética"
+      ],
+      "responses": [
+        "Los polinomios se dividen mediante el método de división larga o división sintética, este último es más rápido cuando el divisor es de la forma x − c."
+      ]
+    },
+    {
+      "tag": "algebra_operaciones_conjunto",
+      "patterns": [
+        "¿Qué operaciones se pueden realizar con conjuntos?",
+        "Dame ejemplos de operaciones con conjuntos"
+      ],
+      "responses": [
+        "Las operaciones básicas con conjuntos son unión, intersección, diferencia y complemento. Por ejemplo, A ∪ B combina todos los elementos de A y B."
+      ]
+    },
+    {
+      "tag": "algebra_grafica_funcion_cuadratica",
+      "patterns": [
+        "¿Cómo se grafica una función cuadrática?",
+        "Dame ejemplos de gráficas cuadráticas"
+      ],
+      "responses": [
+        "La gráfica de una función cuadrática es una parábola. Se traza encontrando el vértice, el eje de simetría y algunos puntos adicionales evaluando valores de x."
+      ]
+    },
+    {
+      "tag": "algebra_raices_polinomios",
+      "patterns": [
+        "¿Cómo encontrar las raíces de un polinomio?",
+        "¿Qué es el teorema del factor?"
+      ],
+      "responses": [
+        "Las raíces de un polinomio son los valores de x que hacen que el polinomio sea cero. El teorema del factor establece que si (x − c) es un factor, entonces c es una raíz."
+      ]
+    },
+    {
+      "tag": "algebra_numeros_complejos",
+      "patterns": [
+        "¿Qué son los números complejos?",
+        "Explícame las partes de un número complejo"
+      ],
+      "responses": [
+        "Los números complejos tienen una parte real y una parte imaginaria. Por ejemplo, 3 + 4i, donde 3 es la parte real y 4i es la parte imaginaria."
+      ]
+    },
+    {
+      "tag": "algebra_modulo_numero_complejo",
+      "patterns": [
+        "¿Qué es el módulo de un número complejo?",
+        "¿Cómo calcular el módulo de un número complejo?"
+      ],
+      "responses": [
+        "El módulo de un número complejo z = a + bi se calcula como |z| = √(a² + b²). Representa la distancia del número al origen en el plano complejo."
+      ]
+    },
+    {
+      "tag": "algebra_transformaciones_lineales",
+      "patterns": [
+        "¿Qué son las transformaciones lineales?",
+        "Explícame cómo funcionan las transformaciones lineales"
+      ],
+      "responses": [
+        "Una transformación lineal es una función entre espacios vectoriales que preserva la suma de vectores y la multiplicación por escalares."
+      ]
+    },
+    {
+      "tag": "algebra_teorema_restos",
+      "patterns": [
+        "¿Qué es el teorema del resto?",
+        "Dame un ejemplo del teorema del resto"
+      ],
+      "responses": [
+        "El teorema del resto establece que si un polinomio P(x) se divide por (x − c), el residuo de la división es P(c)."
+      ]
+    },
+    {
+      "tag": "algebra_teorema_raices",
+      "patterns": [
+        "¿Qué es el teorema de las raíces racionales?",
+        "¿Cómo encontrar posibles raíces racionales de un polinomio?"
+      ],
+      "responses": [
+        "El teorema de las raíces racionales indica que las raíces racionales de un polinomio están en la forma p/q, donde p es un divisor del término independiente y q del coeficiente principal."
+      ]
+    },
+    {
+      "tag": "algebra_inversa_matriz",
+      "patterns": [
+        "¿Qué es la inversa de una matriz?",
+        "¿Cómo calcular la inversa de una matriz?"
+      ],
+      "responses": [
+        "La inversa de una matriz A es otra matriz B tal que AB = I, donde I es la matriz identidad. Se calcula usando el método de adjuntos y determinantes o la eliminación gaussiana."
+      ]
+    },
+    {
+      "tag": "fisica1_cinematica",
+      "patterns": [
+        "¿Qué es la cinemática?",
+        "Explícame el concepto de cinemática"
+      ],
+      "responses": [
+        "La cinemática es la rama de la física que estudia el movimiento de los objetos sin considerar las causas que lo producen."
+      ]
+    },
+    {
+      "tag": "fisica1_velocidad_promedio",
+      "patterns": [
+        "¿Cómo se calcula la velocidad promedio?",
+        "Dame la fórmula de velocidad promedio"
+      ],
+      "responses": [
+        "La velocidad promedio se calcula como el cociente entre el desplazamiento total y el tiempo total: v = Δx / Δt."
+      ]
+    },
+    {
+      "tag": "fisica1_aceleracion",
+      "patterns": [
+        "¿Qué es la aceleración?",
+        "Explícame la aceleración en física"
+      ],
+      "responses": [
+        "La aceleración es la tasa de cambio de la velocidad de un objeto con respecto al tiempo. Se mide en m/s²."
+      ]
+    },
+    {
+      "tag": "fisica1_leyes_newton",
+      "patterns": [
+        "¿Cuáles son las leyes de Newton?",
+        "Explícame las leyes de Newton"
+      ],
+      "responses": [
+        "Las leyes de Newton describen el movimiento de los objetos: 1) Inercia, 2) Fuerza y aceleración (F = ma), 3) Acción y reacción."
+      ]
+    },
+    {
+      "tag": "fisica1_trabajo",
+      "patterns": [
+        "¿Qué es el trabajo en física?",
+        "Explícame el concepto de trabajo"
+      ],
+      "responses": [
+        "El trabajo en física es la energía transferida cuando una fuerza se aplica sobre un objeto y este se desplaza: W = F · d · cos(θ)."
+      ]
+    },
+    {
+      "tag": "fisica1_energia_cinetica",
+      "patterns": [
+        "¿Qué es la energía cinética?",
+        "Dame ejemplos de energía cinética"
+      ],
+      "responses": [
+        "La energía cinética es la energía asociada al movimiento de un objeto, calculada como Ek = 1/2 · m · v²."
+      ]
+    },
+    {
+      "tag": "fisica1_energia_potencial",
+      "patterns": [
+        "¿Qué es la energía potencial?",
+        "Explícame cómo calcular la energía potencial"
+      ],
+      "responses": [
+        "La energía potencial es la energía almacenada debido a la posición de un objeto en un campo gravitacional: Ep = m · g · h."
+      ]
+    },
+    {
+      "tag": "fisica1_conservacion_energia",
+      "patterns": [
+        "¿Qué dice la ley de conservación de la energía?",
+        "Explícame la conservación de la energía"
+      ],
+      "responses": [
+        "La ley de conservación de la energía establece que la energía total en un sistema aislado permanece constante, aunque puede transformarse de una forma a otra."
+      ]
+    },
+    {
+      "tag": "fisica1_movimiento_uniforme",
+      "patterns": [
+        "¿Qué es el movimiento rectilíneo uniforme?",
+        "Explícame el MRU"
+      ],
+      "responses": [
+        "El movimiento rectilíneo uniforme (MRU) ocurre cuando un objeto se mueve en línea recta con velocidad constante, es decir, sin aceleración."
+      ]
+    },
+    {
+      "tag": "fisica1_movimiento_acelerado",
+      "patterns": [
+        "¿Qué es el movimiento uniformemente acelerado?",
+        "Explícame el MUA"
+      ],
+      "responses": [
+        "El movimiento uniformemente acelerado (MUA) es aquel en el que la aceleración es constante, como la caída libre de un objeto."
+      ]
+    },
+    {
+      "tag": "fisica1_ley_gravitacion",
+      "patterns": [
+        "¿Qué es la ley de gravitación universal?",
+        "Explícame la ley de gravitación universal"
+      ],
+      "responses": [
+        "La ley de gravitación universal establece que dos cuerpos se atraen con una fuerza directamente proporcional al producto de sus masas e inversamente proporcional al cuadrado de la distancia que los separa: F = G · (m1 · m2) / r²."
+      ]
+    },
+    {
+      "tag": "fisica1_pendulo",
+      "patterns": [
+        "¿Cómo funciona un péndulo?",
+        "Dame ejemplos del uso de un péndulo"
+      ],
+      "responses": [
+        "Un péndulo es un objeto suspendido que oscila bajo la influencia de la gravedad. Su período depende de la longitud del hilo y la gravedad: T = 2π √(L / g)."
+      ]
+    },
+    {
+      "tag": "fisica1_fuerza",
+      "patterns": [
+        "¿Qué es una fuerza en física?",
+        "Explícame el concepto de fuerza"
+      ],
+      "responses": [
+        "La fuerza es una interacción que cambia el estado de movimiento de un objeto. Se mide en Newtons (N) y se calcula como F = m · a."
+      ]
+    },
+    {
+      "tag": "fisica1_impulso",
+      "patterns": [
+        "¿Qué es el impulso?",
+        "Explícame el impulso en física"
+      ],
+      "responses": [
+        "El impulso es el cambio en la cantidad de movimiento de un objeto debido a una fuerza aplicada durante un tiempo: I = F · Δt."
+      ]
+    },
+    {
+      "tag": "fisica1_cantidad_movimiento",
+      "patterns": [
+        "¿Qué es la cantidad de movimiento?",
+        "Dame la fórmula de cantidad de movimiento"
+      ],
+      "responses": [
+        "La cantidad de movimiento (o momento lineal) es el producto de la masa de un objeto por su velocidad: p = m · v."
+      ]
+    },
+    {
+      "tag": "fisica1_momento_torque",
+      "patterns": [
+        "¿Qué es el torque?",
+        "Explícame el momento de torsión"
+      ],
+      "responses": [
+        "El torque es la medida de la fuerza que puede hacer girar un objeto alrededor de un eje: τ = F · r · sin(θ)."
+      ]
+    },
+    {
+      "tag": "fisica1_cinematica_cae_libre",
+      "patterns": [
+        "¿Qué es la caída libre?",
+        "Explícame cómo calcular la caída libre"
+      ],
+      "responses": [
+        "La caída libre describe el movimiento de un objeto bajo la influencia de la gravedad sin resistencia del aire. La aceleración es constante y se denota como g ≈ 9.8 m/s²."
+      ]
+    },
+    {
+      "tag": "fisica1_dinamica_rotacional",
+      "patterns": [
+        "¿Qué es la dinámica rotacional?",
+        "Explícame las fuerzas en cuerpos giratorios"
+      ],
+      "responses": [
+        "La dinámica rotacional estudia el movimiento de objetos que giran. Incluye conceptos como torque, momento de inercia y aceleración angular."
+      ]
+    },
+    {
+      "tag": "fisica1_mecanica",
+      "patterns": [
+        "¿Qué es la mecánica?",
+        "Explícame las ramas de la mecánica"
+      ],
+      "responses": [
+        "La mecánica es la rama de la física que estudia el movimiento y las fuerzas que lo causan. Se divide en cinemática, dinámica y estática."
+      ]
+    },
+    {
+      "tag": "fisica1_estatica",
+      "patterns": [
+        "¿Qué es la estática en física?",
+        "Explícame el equilibrio estático"
+      ],
+      "responses": [
+        "La estática es la rama de la mecánica que estudia los cuerpos en equilibrio, es decir, sin movimiento. Esto ocurre cuando la suma de fuerzas y torques sobre el cuerpo es cero."
+      ]
+    },
+    {
+      "tag": "fisica1_fuerzas_rozamiento",
+      "patterns": [
+        "¿Qué es la fuerza de rozamiento?",
+        "Dame ejemplos de fuerzas de fricción"
+      ],
+      "responses": [
+        "La fuerza de rozamiento es la resistencia que se opone al movimiento relativo entre dos superficies en contacto. Existen dos tipos: estática y cinética."
+      ]
+    },
+    {
+      "tag": "fisica1_fuerza_elastica",
+      "patterns": [
+        "¿Qué es la fuerza elástica?",
+        "Explícame la ley de Hooke"
+      ],
+      "responses": [
+        "La fuerza elástica es la fuerza que ejerce un resorte u objeto elástico al deformarse. Se calcula con la ley de Hooke: F = −k · x, donde k es la constante del resorte y x es la deformación."
+      ]
+    },
+    {
+      "tag": "fisica1_movimiento_parabolico",
+      "patterns": [
+        "¿Qué es el movimiento parabólico?",
+        "Explícame el lanzamiento de proyectiles"
+      ],
+      "responses": [
+        "El movimiento parabólico es un tipo de movimiento bidimensional donde un objeto sigue una trayectoria curva bajo la influencia de la gravedad. Se analiza descomponiendo el movimiento en componentes horizontal y vertical."
+      ]
+    },
+    {
+      "tag": "fisica1_movimiento_circular",
+      "patterns": [
+        "¿Qué es el movimiento circular?",
+        "Dame ejemplos de movimiento circular"
+      ],
+      "responses": [
+        "El movimiento circular ocurre cuando un objeto se mueve en una trayectoria circular. Puede ser uniforme (velocidad angular constante) o no uniforme (con aceleración angular)."
+      ]
+    },
+    {
+      "tag": "fisica1_aceleracion_centripeta",
+      "patterns": [
+        "¿Qué es la aceleración centrípeta?",
+        "Explícame la fórmula de la aceleración centrípeta"
+      ],
+      "responses": [
+        "La aceleración centrípeta es la aceleración dirigida hacia el centro de un círculo que mantiene a un objeto en movimiento circular. Se calcula como ac = v² / r."
+      ]
+    },
+    {
+      "tag": "fisica1_cantidad_movimiento_angular",
+      "patterns": [
+        "¿Qué es el momento angular?",
+        "Explícame la cantidad de movimiento angular"
+      ],
+      "responses": [
+        "El momento angular es una medida del estado de rotación de un objeto. Se calcula como L = I · ω, donde I es el momento de inercia y ω es la velocidad angular."
+      ]
+    },
+    {
+      "tag": "fisica1_dinamica_fluidos",
+      "patterns": [
+        "¿Qué es la dinámica de fluidos?",
+        "Explícame cómo funcionan los fluidos en movimiento"
+      ],
+      "responses": [
+        "La dinámica de fluidos estudia el comportamiento de los líquidos y gases en movimiento, incluyendo conceptos como flujo laminar, turbulento y ecuación de Bernoulli."
+      ]
+    },
+    {
+      "tag": "fisica1_ecuacion_bernoulli",
+      "patterns": [
+        "¿Qué dice la ecuación de Bernoulli?",
+        "Explícame la ecuación de Bernoulli en fluidos"
+      ],
+      "responses": [
+        "La ecuación de Bernoulli describe la conservación de la energía en un fluido en movimiento: P + 1/2 · ρ · v² + ρ · g · h = constante."
+      ]
+    },
+    {
+      "tag": "fisica1_presion",
+      "patterns": [
+        "¿Qué es la presión en física?",
+        "Explícame cómo calcular la presión"
+      ],
+      "responses": [
+        "La presión es la fuerza ejercida por unidad de área. Se calcula como P = F / A y se mide en pascales (Pa)."
+      ]
+    },
+    {
+      "tag": "fisica1_principio_pascual",
+      "patterns": [
+        "¿Qué es el principio de Pascal?",
+        "Dame un ejemplo del principio de Pascal"
+      ],
+      "responses": [
+        "El principio de Pascal establece que un cambio en la presión aplicado a un fluido encerrado se transmite uniformemente en todas las direcciones."
+      ]
+    },
+    {
+      "tag": "fisica1_principio_arquímedes",
+      "patterns": [
+        "¿Qué es el principio de Arquímedes?",
+        "Explícame el concepto de flotación"
+      ],
+      "responses": [
+        "El principio de Arquímedes establece que un objeto sumergido en un fluido experimenta una fuerza de flotación igual al peso del fluido desplazado."
+      ]
+    },
+    {
+      "tag": "fisica1_ondas",
+      "patterns": [
+        "¿Qué son las ondas?",
+        "Explícame el concepto de onda"
+      ],
+      "responses": [
+        "Una onda es una perturbación que se propaga a través de un medio, transportando energía pero no materia. Puede ser mecánica (requiere un medio) o electromagnética."
+      ]
+    },
+    {
+      "tag": "fisica1_frecuencia",
+      "patterns": [
+        "¿Qué es la frecuencia en física?",
+        "¿Cómo se mide la frecuencia?"
+      ],
+      "responses": [
+        "La frecuencia es el número de oscilaciones o ciclos que ocurren en un segundo. Se mide en hertz (Hz)."
+      ]
+    },
+    {
+      "tag": "fisica1_periodo",
+      "patterns": [
+        "¿Qué es el período de una onda?",
+        "Explícame cómo calcular el período"
+      ],
+      "responses": [
+        "El período es el tiempo que tarda una onda en completar un ciclo. Se calcula como T = 1 / f, donde f es la frecuencia."
+      ]
+    },
+    {
+      "tag": "fisica1_rapidez_onda",
+      "patterns": [
+        "¿Cómo calcular la rapidez de una onda?",
+        "¿Qué es la velocidad de propagación?"
+      ],
+      "responses": [
+        "La rapidez de una onda se calcula como v = λ · f, donde λ es la longitud de onda y f es la frecuencia."
+      ]
+    },
+    {
+      "tag": "fisica1_reflexion",
+      "patterns": [
+        "¿Qué es la reflexión en ondas?",
+        "Dame un ejemplo de reflexión de ondas"
+      ],
+      "responses": [
+        "La reflexión ocurre cuando una onda choca contra una superficie y rebota. Un ejemplo común es el eco de un sonido."
+      ]
+    },
+    {
+      "tag": "fisica1_refraccion",
+      "patterns": [
+        "¿Qué es la refracción?",
+        "Explícame cómo ocurre la refracción"
+      ],
+      "responses": [
+        "La refracción es el cambio de dirección de una onda al pasar de un medio a otro debido a un cambio en su velocidad."
+      ]
+    },
+    {
+      "tag": "fisica1_superposicion_ondas",
+      "patterns": [
+        "¿Qué es el principio de superposición?",
+        "Dame ejemplos de interferencia de ondas"
+      ],
+      "responses": [
+        "El principio de superposición establece que cuando dos ondas se encuentran, el desplazamiento resultante es la suma algebraica de sus desplazamientos individuales."
+      ]
+    },
+    {
+      "tag": "fisica1_energia_mecanica",
+      "patterns": [
+        "¿Qué es la energía mecánica?",
+        "Dame ejemplos de energía mecánica"
+      ],
+      "responses": [
+        "La energía mecánica es la suma de la energía cinética y la energía potencial de un sistema. Es una cantidad conservativa en sistemas sin fricción."
+      ]
+    },
+    {
+      "tag": "fisica1_fuerzas_conservativas",
+      "patterns": [
+        "¿Qué es una fuerza conservativa?",
+        "Dame ejemplos de fuerzas conservativas"
+      ],
+      "responses": [
+        "Una fuerza conservativa es aquella cuyo trabajo realizado depende solo de los puntos inicial y final, como la gravedad y la fuerza elástica."
+      ]
+    },
+    {
+      "tag": "fisica1_fuerzas_no_conservativas",
+      "patterns": [
+        "¿Qué es una fuerza no conservativa?",
+        "Dame ejemplos de fuerzas no conservativas"
+      ],
+      "responses": [
+        "Una fuerza no conservativa es aquella cuyo trabajo depende de la trayectoria, como la fricción. Estas fuerzas generan disipación de energía."
+      ]
+    },
+    {
+      "tag": "fisica1_potencia",
+      "patterns": [
+        "¿Qué es la potencia en física?",
+        "¿Cómo se calcula la potencia?"
+      ],
+      "responses": [
+        "La potencia es la cantidad de trabajo realizado por unidad de tiempo. Se calcula como P = W / t y se mide en vatios (W)."
+      ]
+    },
+    {
+      "tag": "fisica1_energia_termica",
+      "patterns": [
+        "¿Qué es la energía térmica?",
+        "Dame ejemplos de energía térmica"
+      ],
+      "responses": [
+        "La energía térmica es la energía interna de un sistema debido al movimiento de sus partículas. Aumenta con la temperatura."
+      ]
+    },
+    {
+      "tag": "fisica1_calor",
+      "patterns": [
+        "¿Qué es el calor?",
+        "¿Cómo se mide el calor en física?"
+      ],
+      "responses": [
+        "El calor es la transferencia de energía térmica entre cuerpos debido a una diferencia de temperatura. Se mide en joules (J) o calorías (cal)."
+      ]
+    },
+    {
+      "tag": "fisica1_capacidad_calorifica",
+      "patterns": [
+        "¿Qué es la capacidad calorífica?",
+        "Explícame cómo calcular la capacidad calorífica"
+      ],
+      "responses": [
+        "La capacidad calorífica es la cantidad de calor necesaria para elevar la temperatura de un objeto en 1 °C. Se calcula como C = Q / ΔT."
+      ]
+    },
+    {
+      "tag": "fisica1_calor_especifico",
+      "patterns": [
+        "¿Qué es el calor específico?",
+        "Dame la fórmula del calor específico"
+      ],
+      "responses": [
+        "El calor específico es la cantidad de calor necesaria para elevar la temperatura de 1 kg de una sustancia en 1 °C. Se calcula como c = Q / (m · ΔT)."
+      ]
+    },
+    {
+      "tag": "fisica1_dilatacion_termica",
+      "patterns": [
+        "¿Qué es la dilatación térmica?",
+        "Explícame la dilatación térmica de sólidos"
+      ],
+      "responses": [
+        "La dilatación térmica es el aumento de tamaño de un material debido a un incremento en su temperatura. Se calcula como ΔL = α · L₀ · ΔT, donde α es el coeficiente de dilatación."
+      ]
+    },
+    {
+      "tag": "fisica1_presion_hidrostatica",
+      "patterns": [
+        "¿Qué es la presión hidrostática?",
+        "Dame la fórmula de la presión hidrostática"
+      ],
+      "responses": [
+        "La presión hidrostática es la presión ejercida por un fluido en reposo. Se calcula como P = ρ · g · h, donde ρ es la densidad del fluido, g es la gravedad y h es la altura del fluido."
+      ]
+    },
+    {
+      "tag": "fisica1_tension_superficial",
+      "patterns": [
+        "¿Qué es la tensión superficial?",
+        "Explícame el concepto de tensión superficial"
+      ],
+      "responses": [
+        "La tensión superficial es la fuerza que actúa en la superficie de un líquido, causada por las fuerzas intermoleculares. Permite fenómenos como que los insectos caminen sobre el agua."
+      ]
+    },
+    {
+      "tag": "fisica1_viscosidad",
+      "patterns": [
+        "¿Qué es la viscosidad?",
+        "Dame ejemplos de viscosidad en líquidos"
+      ],
+      "responses": [
+        "La viscosidad es la resistencia de un fluido a fluir. Por ejemplo, la miel tiene una alta viscosidad en comparación con el agua."
+      ]
+    },
+    {
+      "tag": "fisica1_pendulo_simple",
+      "patterns": [
+        "¿Qué es un péndulo simple?",
+        "¿Cómo calcular el período de un péndulo simple?"
+      ],
+      "responses": [
+        "Un péndulo simple es un sistema idealizado que consiste en una masa suspendida de un hilo sin masa. Su período se calcula como T = 2π √(L / g)."
+      ]
+    },
+    {
+      "tag": "fisica1_pendulo_fisico",
+      "patterns": [
+        "¿Qué es un péndulo físico?",
+        "Explícame la diferencia entre péndulo físico y simple"
+      ],
+      "responses": [
+        "Un péndulo físico es cualquier objeto rígido que puede oscilar alrededor de un eje fijo. Su período depende de su momento de inercia y distancia al eje."
+      ]
+    },
+    {
+      "tag": "fisica1_colisiones",
+      "patterns": [
+        "¿Qué es una colisión en física?",
+        "¿Cómo se clasifican las colisiones?"
+      ],
+      "responses": [
+        "Una colisión es una interacción entre dos objetos que implica un intercambio de momento y energía. Pueden ser elásticas (se conserva la energía cinética) o inelásticas (parte de la energía se convierte en otra forma)."
+      ]
+    },
+    {
+      "tag": "fisica1_presion_atmosferica",
+      "patterns": [
+        "¿Qué es la presión atmosférica?",
+        "¿Cómo medir la presión atmosférica?"
+      ],
+      "responses": [
+        "La presión atmosférica es la fuerza que ejerce el aire sobre la superficie terrestre. Se mide con un barómetro y su valor promedio al nivel del mar es 101325 Pa."
+      ]
+    },
+    {
+      "tag": "fisica1_flujo",
+      "patterns": [
+        "¿Qué es el flujo en física?",
+        "¿Cómo se mide el flujo en un fluido?"
+      ],
+      "responses": [
+        "El flujo es la cantidad de fluido que pasa por una sección transversal en un tiempo determinado. Se mide como Q = A · v, donde A es el área y v la velocidad del fluido."
+      ]
+    },
+    {
+      "tag": "fisica1_ecuacion_continuidad",
+      "patterns": [
+        "¿Qué dice la ecuación de continuidad?",
+        "Explícame cómo funciona la ecuación de continuidad"
+      ],
+      "responses": [
+        "La ecuación de continuidad establece que en un fluido incompresible, el producto del área de la sección transversal y la velocidad del flujo es constante: A₁v₁ = A₂v₂."
+      ]
+    },
+    {
+      "tag": "fisica1_flotabilidad",
+      "patterns": [
+        "¿Qué es la flotabilidad?",
+        "¿Cómo se calcula la fuerza de flotación?"
+      ],
+      "responses": [
+        "La flotabilidad es la fuerza ascendente que experimenta un objeto sumergido en un fluido. Se calcula como F = ρ · V · g, donde V es el volumen desplazado."
+      ]
+    },
+    {
+      "tag": "ingenieria_software_que_es",
+      "patterns": [
+        "¿Qué es la ingeniería de software?",
+        "Explícame el concepto de ingeniería de software"
+      ],
+      "responses": [
+        "La ingeniería de software es la disciplina que se encarga del diseño, desarrollo, mantenimiento y gestión de software de alta calidad."
+      ]
+    },
+    {
+      "tag": "ingenieria_software_ciclo_vida",
+      "patterns": [
+        "¿Qué es el ciclo de vida del software?",
+        "Explícame las fases del ciclo de vida del software"
+      ],
+      "responses": [
+        "El ciclo de vida del software incluye fases como análisis, diseño, implementación, pruebas, despliegue y mantenimiento."
+      ]
+    },
+    {
+      "tag": "ingenieria_software_modelo_cascada",
+      "patterns": [
+        "¿Qué es el modelo en cascada?",
+        "Explícame cómo funciona el modelo en cascada"
+      ],
+      "responses": [
+        "El modelo en cascada es un enfoque de desarrollo de software lineal donde cada fase debe completarse antes de pasar a la siguiente."
+      ]
+    },
+    {
+      "tag": "ingenieria_software_modelo_agil",
+      "patterns": [
+        "¿Qué es el modelo ágil?",
+        "Explícame las metodologías ágiles"
+      ],
+      "responses": [
+        "El modelo ágil es un enfoque iterativo y flexible para el desarrollo de software, centrado en la colaboración y entregas rápidas. Ejemplos incluyen Scrum y Kanban."
+      ]
+    },
+    {
+      "tag": "ingenieria_software_uml",
+      "patterns": [
+        "¿Qué es UML?",
+        "Explícame los diagramas UML"
+      ],
+      "responses": [
+        "UML (Lenguaje Unificado de Modelado) es un lenguaje gráfico que se utiliza para visualizar, especificar, construir y documentar sistemas de software."
+      ]
+    },
+    {
+      "tag": "ingenieria_software_requisitos",
+      "patterns": [
+        "¿Qué son los requisitos en ingeniería de software?",
+        "Explícame los tipos de requisitos"
+      ],
+      "responses": [
+        "Los requisitos son las necesidades y expectativas del cliente respecto al software. Se dividen en funcionales (qué hace el sistema) y no funcionales (rendimiento, seguridad, etc.)."
+      ]
+    },
+    {
+      "tag": "ingenieria_software_caso_uso",
+      "patterns": [
+        "¿Qué es un caso de uso?",
+        "Explícame cómo se elabora un caso de uso"
+      ],
+      "responses": [
+        "Un caso de uso es una descripción de cómo un usuario interactúa con el sistema para lograr un objetivo. Incluye actores, acciones y resultados esperados."
+      ]
+    },
+    {
+      "tag": "ingenieria_software_pruebas",
+      "patterns": [
+        "¿Qué son las pruebas de software?",
+        "¿Cuáles son los tipos de pruebas de software?"
+      ],
+      "responses": [
+        "Las pruebas de software verifican que el sistema funcione correctamente. Pueden ser unitarias, de integración, funcionales y de rendimiento, entre otras."
+      ]
+    },
+    {
+      "tag": "ingenieria_software_patrones_diseño",
+      "patterns": [
+        "¿Qué son los patrones de diseño?",
+        "Dame ejemplos de patrones de diseño"
+      ],
+      "responses": [
+        "Los patrones de diseño son soluciones reutilizables para problemas comunes en el diseño de software. Ejemplos incluyen Singleton, Factory y Observer."
+      ]
+    },
+    {
+      "tag": "ingenieria_software_documentacion",
+      "patterns": [
+        "¿Qué es la documentación en ingeniería de software?",
+        "Explícame la importancia de la documentación"
+      ],
+      "responses": [
+        "La documentación incluye todos los materiales escritos que describen el diseño, implementación y uso del software. Es clave para el mantenimiento y la colaboración."
+      ]
+    },
+    {
+      "tag": "ingenieria_software_gestion_proyectos",
+      "patterns": [
+        "¿Cómo se gestiona un proyecto de software?",
+        "Explícame la gestión de proyectos de software"
+      ],
+      "responses": [
+        "La gestión de proyectos de software implica planificación, asignación de recursos, seguimiento de progreso y gestión de riesgos para cumplir con los objetivos del proyecto."
+      ]
+    },
+    {
+      "tag": "ingenieria_software_control_versiones",
+      "patterns": [
+        "¿Qué es el control de versiones?",
+        "¿Cómo funciona un sistema de control de versiones?"
+      ],
+      "responses": [
+        "El control de versiones es el proceso de gestionar los cambios en el código fuente. Herramientas como Git permiten colaborar y rastrear modificaciones."
+      ]
+    },
+    {
+      "tag": "ingenieria_software_mantenimiento",
+      "patterns": [
+        "¿Qué es el mantenimiento de software?",
+        "Explícame los tipos de mantenimiento de software"
+      ],
+      "responses": [
+        "El mantenimiento de software incluye actividades para corregir errores, mejorar el rendimiento o adaptarlo a nuevos requisitos. Puede ser correctivo, adaptativo, perfectivo o preventivo."
+      ]
+    },
+    {
+      "tag": "ingenieria_software_testing_automatizado",
+      "patterns": [
+        "¿Qué es el testing automatizado?",
+        "Explícame cómo funciona el testing automatizado"
+      ],
+      "responses": [
+        "El testing automatizado utiliza herramientas y scripts para ejecutar pruebas de software automáticamente, mejorando la eficiencia y reduciendo errores humanos."
+      ]
+    },
+    {
+      "tag": "ingenieria_software_metodologia_scrum",
+      "patterns": [
+        "¿Qué es Scrum?",
+        "Explícame cómo funciona Scrum"
+      ],
+      "responses": [
+        "Scrum es una metodología ágil que organiza el desarrollo en sprints cortos con entregables incrementales. Involucra roles como Product Owner, Scrum Master y el equipo de desarrollo."
+      ]
+    },
+    {
+      "tag": "ingenieria_software_diagrama_clases",
+      "patterns": [
+        "¿Qué es un diagrama de clases?",
+        "Explícame cómo se hace un diagrama de clases"
+      ],
+      "responses": [
+        "Un diagrama de clases es un tipo de diagrama UML que representa la estructura estática de un sistema, mostrando clases, atributos, métodos y relaciones entre ellas."
+      ]
+    },
+    {
+      "tag": "ingenieria_software_diagrama_secuencia",
+      "patterns": [
+        "¿Qué es un diagrama de secuencia?",
+        "Explícame el uso de un diagrama de secuencia"
+      ],
+      "responses": [
+        "Un diagrama de secuencia es un tipo de diagrama UML que muestra cómo los objetos interactúan en un sistema en el tiempo, representando mensajes y eventos."
+      ]
+    },
+    {
+      "tag": "ingenieria_software_calidad_software",
+      "patterns": [
+        "¿Qué es la calidad de software?",
+        "Explícame cómo se mide la calidad de software"
+      ],
+      "responses": [
+        "La calidad de software evalúa qué tan bien el software cumple con los requisitos funcionales y no funcionales. Se mide con métricas como usabilidad, eficiencia, confiabilidad y mantenibilidad."
+      ]
+    },
+    {
+      "tag": "ingenieria_software_seguridad_software",
+      "patterns": [
+        "¿Qué es la seguridad en software?",
+        "Dame ejemplos de medidas de seguridad en software"
+      ],
+      "responses": [
+        "La seguridad de software incluye prácticas para proteger el sistema contra accesos no autorizados, ataques y fallos. Ejemplos incluyen encriptación, autenticación y pruebas de seguridad."
+      ]
+    },
+    {
+      "tag": "ingenieria_software_metodologia_kanban",
+      "patterns": [
+        "¿Qué es Kanban?",
+        "Explícame cómo funciona Kanban"
+      ],
+      "responses": [
+        "Kanban es una metodología ágil que se centra en la visualización del flujo de trabajo utilizando un tablero para gestionar tareas y limitar el trabajo en curso."
+      ]
+    },
+    {
+      "tag": "ingenieria_software_revisiones_codigo",
+      "patterns": [
+        "¿Qué es una revisión de código?",
+        "Explícame el proceso de revisión de código"
+      ],
+      "responses": [
+        "Una revisión de código es un proceso donde los desarrolladores revisan el código escrito por otros para encontrar errores, mejorar la calidad y garantizar el cumplimiento de estándares."
+      ]
+    },
+    {
+      "tag": "ingenieria_software_devops",
+      "patterns": [
+        "¿Qué es DevOps?",
+        "Explícame cómo funciona DevOps"
+      ],
+      "responses": [
+        "DevOps es un enfoque que combina desarrollo y operaciones para mejorar la colaboración, la automatización y la entrega continua en el desarrollo de software."
+      ]
+    },
+    {
+      "tag": "ingenieria_software_cicd",
+      "patterns": [
+        "¿Qué es CI/CD?",
+        "Explícame los conceptos de CI/CD"
+      ],
+      "responses": [
+        "CI/CD (Integración Continua/Despliegue Continuo) es una práctica que automatiza la integración de código y su despliegue, permitiendo entregas rápidas y confiables."
+      ]
+    },
+    {
+      "tag": "ingenieria_software_diseño_responsivo",
+      "patterns": [
+        "¿Qué es el diseño responsivo?",
+        "Explícame el diseño responsivo en software"
+      ],
+      "responses": [
+        "El diseño responsivo es una técnica para crear interfaces de usuario que se adapten automáticamente a diferentes tamaños de pantalla y dispositivos."
+      ]
+    },
+    {
+      "tag": "ingenieria_software_arquitectura_micros",
+      "patterns": [
+        "¿Qué es la arquitectura de microservicios?",
+        "Explícame cómo funciona la arquitectura de microservicios"
+      ],
+      "responses": [
+        "La arquitectura de microservicios es un enfoque de desarrollo de software donde una aplicación se construye como un conjunto de servicios pequeños e independientes que interactúan entre sí."
+      ]
+    },
+    {
+      "tag": "ingenieria_software_testing_regresion",
+      "patterns": [
+        "¿Qué es el testing de regresión?",
+        "¿Por qué es importante el testing de regresión?"
+      ],
+      "responses": [
+        "El testing de regresión verifica que los cambios recientes en el software no hayan introducido errores en funcionalidades existentes. Es crucial después de actualizaciones o correcciones."
+      ]
+    },
+    {
+      "tag": "ingenieria_software_testing_unitario",
+      "patterns": [
+        "¿Qué es el testing unitario?",
+        "Dame ejemplos de testing unitario"
+      ],
+      "responses": [
+        "El testing unitario es el proceso de probar componentes individuales del software, como funciones o métodos, para asegurarse de que funcionan correctamente de forma aislada."
+      ]
+    },
+    {
+      "tag": "ingenieria_software_integracion_continua",
+      "patterns": [
+        "¿Qué es la integración continua?",
+        "Explícame los beneficios de la integración continua"
+      ],
+      "responses": [
+        "La integración continua es una práctica que implica combinar regularmente el código de todos los desarrolladores en un repositorio compartido, automatizando la construcción y pruebas para detectar errores temprano."
+      ]
+    },
+    {
+      "tag": "ingenieria_software_refactorizacion",
+      "patterns": [
+        "¿Qué es la refactorización?",
+        "Explícame cuándo es necesario refactorizar el código"
+      ],
+      "responses": [
+        "La refactorización es el proceso de mejorar la estructura interna del código sin cambiar su comportamiento externo, para hacerlo más legible, mantenible y eficiente."
+      ]
+    },
+    {
+      "tag": "ingenieria_software_seguridad_cibernetica",
+      "patterns": [
+        "¿Qué es la seguridad cibernética en software?",
+        "Dame ejemplos de prácticas de seguridad cibernética"
+      ],
+      "responses": [
+        "La seguridad cibernética en software implica proteger sistemas y datos contra accesos no autorizados, ataques y vulnerabilidades. Ejemplos incluyen firewalls, autenticación multifactor y pruebas de penetración."
+      ]
+    },
+    {
+      "tag": "ingenieria_software_documentacion_api",
+      "patterns": [
+        "¿Qué es la documentación de API?",
+        "¿Cómo se realiza la documentación de una API?"
+      ],
+      "responses": [
+        "La documentación de API describe cómo usar una interfaz de programación, incluyendo sus endpoints, parámetros, ejemplos y respuestas esperadas."
+      ]
+    },
+    {
+      "tag": "ingenieria_software_arquitectura_capas",
+      "patterns": [
+        "¿Qué es la arquitectura en capas?",
+        "Explícame cómo funciona la arquitectura en capas"
+      ],
+      "responses": [
+        "La arquitectura en capas organiza una aplicación en niveles, como presentación, lógica de negocio y acceso a datos, para mejorar la modularidad y mantenibilidad."
+      ]
+    },
+    {
+      "tag": "ingenieria_software_monolitico",
+      "patterns": [
+        "¿Qué es una arquitectura monolítica?",
+        "Explícame las ventajas y desventajas de la arquitectura monolítica"
+      ],
+      "responses": [
+        "Una arquitectura monolítica integra todas las funcionalidades de una aplicación en un único sistema. Es más sencilla de desarrollar inicialmente, pero puede ser difícil de escalar y mantener."
+      ]
+    },
+    {
+      "tag": "ingenieria_software_diagrama_deployment",
+      "patterns": [
+        "¿Qué es un diagrama de deployment?",
+        "Explícame cómo se crea un diagrama de deployment"
+      ],
+      "responses": [
+        "Un diagrama de deployment en UML muestra cómo los componentes del software se distribuyen en hardware, representando nodos, artefactos y conexiones entre ellos."
+      ]
+    },
+    {
+      "tag": "ingenieria_software_metricas",
+      "patterns": [
+        "¿Qué son las métricas de software?",
+        "Dame ejemplos de métricas de software"
+      ],
+      "responses": [
+        "Las métricas de software miden aspectos del desarrollo y calidad del software. Ejemplos incluyen líneas de código, complejidad ciclomatica y tasa de defectos."
+      ]
+    },
+    {
+      "tag": "ingenieria_software_repositorio",
+      "patterns": [
+        "¿Qué es un repositorio de código?",
+        "¿Cómo se utiliza un repositorio de código?"
+      ],
+      "responses": [
+        "Un repositorio de código es un almacenamiento centralizado para guardar y gestionar el código fuente, generalmente en sistemas como GitHub o Bitbucket."
+      ]
+    },
+    {
+      "tag": "ingenieria_software_scrum_roles",
+      "patterns": [
+        "¿Cuáles son los roles en Scrum?",
+        "Explícame los roles del Product Owner, Scrum Master y equipo de desarrollo"
+      ],
+      "responses": [
+        "En Scrum, los roles principales son: Product Owner (gestiona el backlog), Scrum Master (facilita el proceso) y el equipo de desarrollo (entrega incrementos funcionales)."
+      ]
+    },
+    {
+      "tag": "ingenieria_software_api",
+      "patterns": [
+        "¿Qué es una API en software?",
+        "Explícame cómo funcionan las APIs"
+      ],
+      "responses": [
+        "Una API (Interfaz de Programación de Aplicaciones) permite que diferentes sistemas o aplicaciones interactúen entre sí mediante definiciones y protocolos estandarizados."
+      ]
+    },
+    {
+      "tag": "programacion1_que_es",
+      "patterns": [
+        "¿Qué es la programación?",
+        "Explícame el concepto de programación"
+      ],
+      "responses": [
+        "La programación es el proceso de crear instrucciones que las computadoras pueden entender para realizar tareas específicas."
+      ]
+    },
+    {
+      "tag": "programacion1_lenguaje_programacion",
+      "patterns": [
+        "¿Qué es un lenguaje de programación?",
+        "Dame ejemplos de lenguajes de programación"
+      ],
+      "responses": [
+        "Un lenguaje de programación es un conjunto de reglas y sintaxis que permite a los desarrolladores escribir código. Ejemplos incluyen Python, Java, y C++."
+      ]
+    },
+    {
+      "tag": "programacion1_variables",
+      "patterns": [
+        "¿Qué es una variable?",
+        "Explícame el concepto de variable en programación"
+      ],
+      "responses": [
+        "Una variable es un espacio de almacenamiento en memoria con un nombre que contiene un valor que puede cambiar durante la ejecución del programa."
+      ]
+    },
+    {
+      "tag": "programacion1_tipos_datos",
+      "patterns": [
+        "¿Cuáles son los tipos de datos?",
+        "Explícame los tipos de datos básicos"
+      ],
+      "responses": [
+        "Los tipos de datos básicos incluyen enteros (int), decimales (float), cadenas de texto (string) y booleanos (bool)."
+      ]
+    },
+    {
+      "tag": "programacion1_condicionales",
+      "patterns": [
+        "¿Qué es una estructura condicional?",
+        "Explícame cómo funcionan los if-else"
+      ],
+      "responses": [
+        "Una estructura condicional permite ejecutar diferentes bloques de código según una condición. Ejemplo: if (x > 5) { // código } else { // otro código }."
+      ]
+    },
+    {
+      "tag": "programacion1_bucles",
+      "patterns": [
+        "¿Qué es un bucle?",
+        "Dame ejemplos de bucles en programación"
+      ],
+      "responses": [
+        "Un bucle es una estructura que repite un bloque de código mientras una condición sea verdadera. Ejemplos: for, while, do-while."
+      ]
+    },
+    {
+      "tag": "programacion1_funciones",
+      "patterns": [
+        "¿Qué es una función en programación?",
+        "Explícame cómo crear una función"
+      ],
+      "responses": [
+        "Una función es un bloque de código reutilizable que realiza una tarea específica. Ejemplo en Python: def suma(a, b): return a + b."
+      ]
+    },
+    {
+      "tag": "programacion1_arrays",
+      "patterns": [
+        "¿Qué es un array?",
+        "Explícame cómo usar un array"
+      ],
+      "responses": [
+        "Un array es una colección ordenada de elementos del mismo tipo, almacenados en posiciones consecutivas en memoria."
+      ]
+    },
+    {
+      "tag": "programacion1_entrada_salida",
+      "patterns": [
+        "¿Qué es la entrada y salida estándar?",
+        "Dame ejemplos de entrada y salida"
+      ],
+      "responses": [
+        "La entrada estándar permite al usuario ingresar datos (ejemplo: input()), y la salida estándar muestra información al usuario (ejemplo: print())."
+      ]
+    },
+    {
+      "tag": "programacion1_constantes",
+      "patterns": [
+        "¿Qué es una constante?",
+        "Dame ejemplos de constantes"
+      ],
+      "responses": [
+        "Una constante es un valor que no cambia durante la ejecución del programa. Ejemplo: const PI = 3.1416; en JavaScript."
+      ]
+    },
+    {
+      "tag": "programacion1_operadores",
+      "patterns": [
+        "¿Qué son los operadores en programación?",
+        "Dame ejemplos de operadores"
+      ],
+      "responses": [
+        "Los operadores son símbolos que realizan operaciones sobre datos. Ejemplos: + (suma), - (resta), * (multiplicación), / (división), y % (módulo)."
+      ]
+    },
+    {
+      "tag": "programacion1_tipos_errores",
+      "patterns": [
+        "¿Qué tipos de errores hay en programación?",
+        "Explícame los errores comunes"
+      ],
+      "responses": [
+        "Los errores comunes incluyen errores de sintaxis (fallas en las reglas del lenguaje), errores de tiempo de ejecución (cuando algo falla al ejecutar), y errores lógicos (cuando el programa no hace lo que se espera)."
+      ]
+    },
+    {
+      "tag": "programacion1_compilacion",
+      "patterns": [
+        "¿Qué es la compilación?",
+        "Explícame cómo funciona un compilador"
+      ],
+      "responses": [
+        "La compilación es el proceso de traducir el código fuente a código máquina ejecutable por la computadora. Un compilador realiza esta tarea."
+      ]
+    },
+    {
+      "tag": "programacion1_debugging",
+      "patterns": [
+        "¿Qué es el debugging?",
+        "¿Cómo se soluciona un error en el código?"
+      ],
+      "responses": [
+        "El debugging es el proceso de encontrar y corregir errores en el código. Se puede realizar utilizando herramientas como depuradores o añadiendo mensajes de salida."
+      ]
+    },
+    {
+      "tag": "programacion1_sintaxis",
+      "patterns": [
+        "¿Qué es la sintaxis en programación?",
+        "¿Por qué es importante la sintaxis?"
+      ],
+      "responses": [
+        "La sintaxis son las reglas que determinan cómo se debe escribir el código en un lenguaje de programación. Es importante para que el compilador o intérprete pueda entenderlo."
+      ]
+    },
+    {
+      "tag": "programacion1_estructuras_datos",
+      "patterns": [
+        "¿Qué son las estructuras de datos?",
+        "Dame ejemplos de estructuras de datos básicas"
+      ],
+      "responses": [
+        "Las estructuras de datos son formas de organizar y almacenar datos. Ejemplos básicos incluyen arrays, listas enlazadas, pilas y colas."
+      ]
+    },
+    {
+      "tag": "programacion1_pseudocodigo",
+      "patterns": [
+        "¿Qué es un pseudocódigo?",
+        "Explícame cómo escribir pseudocódigo"
+      ],
+      "responses": [
+        "El pseudocódigo es una representación informal de un algoritmo que utiliza un lenguaje natural combinado con elementos de programación. Se usa para planificar programas."
+      ]
+    },
+    {
+      "tag": "programacion1_alternativas",
+      "patterns": [
+        "¿Qué son las estructuras alternativas?",
+        "Explícame las alternativas en programación"
+      ],
+      "responses": [
+        "Las estructuras alternativas permiten ejecutar diferentes bloques de código según condiciones. Ejemplo: switch-case en JavaScript."
+      ]
+    },
+    {
+      "tag": "programacion1_comentarios",
+      "patterns": [
+        "¿Qué son los comentarios en el código?",
+        "¿Cómo se usan los comentarios?"
+      ],
+      "responses": [
+        "Los comentarios son notas en el código que no afectan su ejecución. Sirven para documentar y explicar partes del código. Ejemplo en Python: # Esto es un comentario."
+      ]
+    },
+    {
+      "tag": "programacion1_ides",
+      "patterns": [
+        "¿Qué es un IDE?",
+        "Dame ejemplos de IDEs"
+      ],
+      "responses": [
+        "Un IDE (Entorno de Desarrollo Integrado) es una aplicación que proporciona herramientas para escribir, depurar y compilar código. Ejemplos: Visual Studio Code, Eclipse, PyCharm."
+      ]
+    },
+    {
+      "tag": "programacion2_poo",
+      "patterns": [
+        "¿Qué es la programación orientada a objetos?",
+        "Explícame el concepto de POO"
+      ],
+      "responses": [
+        "La programación orientada a objetos (POO) es un paradigma que organiza el código en objetos, que contienen datos (atributos) y comportamientos (métodos)."
+      ]
+    },
+    {
+      "tag": "programacion2_clases",
+      "patterns": [
+        "¿Qué es una clase en programación?",
+        "Explícame cómo crear una clase"
+      ],
+      "responses": [
+        "Una clase es una plantilla para crear objetos. Define atributos y métodos. Ejemplo en Python: class Persona: def __init__(self, nombre): self.nombre = nombre."
+      ]
+    },
+    {
+      "tag": "programacion2_objetos",
+      "patterns": [
+        "¿Qué es un objeto?",
+        "Dame ejemplos de objetos en programación"
+      ],
+      "responses": [
+        "Un objeto es una instancia de una clase que contiene atributos y métodos definidos por la clase. Ejemplo: p1 = Persona('Juan')."
+      ]
+    },
+    {
+      "tag": "programacion2_encapsulamiento",
+      "patterns": [
+        "¿Qué es el encapsulamiento?",
+        "Explícame cómo se usa el encapsulamiento"
+      ],
+      "responses": [
+        "El encapsulamiento es el principio de ocultar los detalles internos de un objeto y permitir el acceso solo a través de métodos públicos."
+      ]
+    },
+    {
+      "tag": "programacion2_herencia",
+      "patterns": [
+        "¿Qué es la herencia?",
+        "Explícame cómo funciona la herencia en programación"
+      ],
+      "responses": [
+        "La herencia permite que una clase derive de otra, heredando sus atributos y métodos. Ejemplo en Python: class Estudiante(Persona): pass."
+      ]
+    },
+    {
+      "tag": "programacion2_polimorfismo",
+      "patterns": [
+        "¿Qué es el polimorfismo?",
+        "Explícame el concepto de polimorfismo en POO"
+      ],
+      "responses": [
+        "El polimorfismo permite que un mismo método tenga diferentes comportamientos según la clase que lo implemente. Ejemplo: una clase Animal con un método sonido() que varía entre Gato y Perro."
+      ]
+    },
+    {
+      "tag": "programacion2_constructores",
+      "patterns": [
+        "¿Qué es un constructor?",
+        "Dame ejemplos de constructores en programación"
+      ],
+      "responses": [
+        "Un constructor es un método especial que se ejecuta automáticamente al crear un objeto. Ejemplo en Python: def __init__(self, nombre): self.nombre = nombre."
+      ]
+    },
+    {
+      "tag": "programacion2_interfaces",
+      "patterns": [
+        "¿Qué es una interfaz en programación?",
+        "Explícame el uso de interfaces"
+      ],
+      "responses": [
+        "Una interfaz define un conjunto de métodos que una clase debe implementar. Es útil para garantizar un comportamiento común entre clases. Ejemplo en Java: interface Animal { void sonido(); }."
+      ]
+    },
+    {
+      "tag": "programacion2_abstractas",
+      "patterns": [
+        "¿Qué es una clase abstracta?",
+        "Dame ejemplos de clases abstractas"
+      ],
+      "responses": [
+        "Una clase abstracta no se puede instanciar y está diseñada para ser heredada. Puede contener métodos abstractos (sin implementar) y concretos. Ejemplo en Java: abstract class Figura { abstract void area(); }."
+      ]
+    },
+    {
+      "tag": "programacion2_metodos_estaticos",
+      "patterns": [
+        "¿Qué es un método estático?",
+        "Explícame cómo funcionan los métodos estáticos"
+      ],
+      "responses": [
+        "Un método estático pertenece a la clase y no a las instancias. Se puede llamar directamente desde la clase. Ejemplo en Python: @staticmethod def metodo(): return 'Hola'."
+      ]
+    },
+    {
+      "tag": "programacion2_sobrecarga",
+      "patterns": [
+        "¿Qué es la sobrecarga de métodos?",
+        "Dame ejemplos de sobrecarga de métodos"
+      ],
+      "responses": [
+        "La sobrecarga permite definir múltiples métodos con el mismo nombre pero con diferentes parámetros. Ejemplo en C++: void suma(int a, int b); void suma(float a, float b);."
+      ]
+    },
+    {
+      "tag": "programacion2_sobreescritura",
+      "patterns": [
+        "¿Qué es la sobreescritura de métodos?",
+        "Explícame cómo se usa la sobreescritura"
+      ],
+      "responses": [
+        "La sobreescritura permite que una clase hija redefina un método de la clase padre con una implementación diferente. Ejemplo en Python: def metodo(self): return 'Nuevo comportamiento'."
+      ]
+    },
+    {
+      "tag": "programacion2_manejo_excepciones",
+      "patterns": [
+        "¿Qué es el manejo de excepciones?",
+        "Dame ejemplos de manejo de excepciones"
+      ],
+      "responses": [
+        "El manejo de excepciones permite controlar errores en tiempo de ejecución. Ejemplo en Python: try: x = 1 / 0 except ZeroDivisionError: print('Error')."
+      ]
+    },
+    {
+      "tag": "programacion2_archivos",
+      "patterns": [
+        "¿Cómo manejar archivos en programación avanzada?",
+        "Dame ejemplos de operaciones con archivos"
+      ],
+      "responses": [
+        "El manejo de archivos incluye abrir, leer, escribir y cerrar archivos. Ejemplo en Java: FileReader reader = new FileReader('archivo.txt');."
+      ]
+    },
+    {
+      "tag": "programacion2_genericos",
+      "patterns": [
+        "¿Qué son los genéricos en programación?",
+        "Explícame el uso de genéricos"
+      ],
+      "responses": [
+        "Los genéricos permiten definir clases, métodos o interfaces que trabajan con tipos de datos genéricos. Ejemplo en Java: class Caja<T> { T objeto; }."
+      ]
+    },
+    {
+      "tag": "programacion2_colleciones",
+      "patterns": [
+        "¿Qué son las colecciones en programación?",
+        "Dame ejemplos de colecciones"
+      ],
+      "responses": [
+        "Las colecciones son estructuras que almacenan grupos de elementos. Ejemplos: listas, conjuntos, mapas. En Python: lista = [1, 2, 3]."
+      ]
+    },
+    {
+      "tag": "programacion2_iteradores",
+      "patterns": [
+        "¿Qué es un iterador?",
+        "Explícame cómo funcionan los iteradores"
+      ],
+      "responses": [
+        "Un iterador es un objeto que permite recorrer una colección de elementos uno a uno. Ejemplo en Python: for elemento in lista: print(elemento)."
+      ]
+    },
+    {
+      "tag": "programacion2_serializacion",
+      "patterns": [
+        "¿Qué es la serialización?",
+        "Dame ejemplos de serialización en programación"
+      ],
+      "responses": [
+        "La serialización convierte un objeto en un formato que puede ser almacenado o transmitido. Ejemplo en Python: import pickle; pickle.dump(objeto, archivo)."
+      ]
+    },
+    {
+      "tag": "programacion2_hilos",
+      "patterns": [
+        "¿Qué son los hilos en programación?",
+        "Explícame cómo funcionan los hilos"
+      ],
+      "responses": [
+        "Los hilos permiten ejecutar múltiples tareas concurrentemente dentro de un programa. Ejemplo en Java: Thread t = new Thread(() -> System.out.println('Hilo')); t.start();."
+      ]
+    },
+    {
+      "tag": "programacion2_composicion",
+      "patterns": [
+        "¿Qué es la composición en POO?",
+        "Explícame cómo funciona la composición"
+      ],
+      "responses": [
+        "La composición en POO es una técnica donde una clase incluye objetos de otras clases como parte de sus atributos, permitiendo reutilizar código. Ejemplo: class Coche { Motor motor; }."
+      ]
+    },
+    {
+      "tag": "programacion2_associacion",
+      "patterns": [
+        "¿Qué es la asociación en POO?",
+        "Explícame el concepto de asociación en POO"
+      ],
+      "responses": [
+        "La asociación describe una relación entre dos clases donde una clase utiliza a otra. Ejemplo: class Alumno { Curso curso; }."
+      ]
+    },
+    {
+      "tag": "programacion2_agregacion",
+      "patterns": [
+        "¿Qué es la agregación en POO?",
+        "Explícame la diferencia entre composición y agregación"
+      ],
+      "responses": [
+        "La agregación es una forma especial de asociación donde una clase puede existir independientemente de la otra. Ejemplo: class Equipo { Jugador[] jugadores; }."
+      ]
+    },
+    {
+      "tag": "programacion2_ciclo_vida_objeto",
+      "patterns": [
+        "¿Cuál es el ciclo de vida de un objeto?",
+        "Explícame cómo se gestionan los objetos en memoria"
+      ],
+      "responses": [
+        "El ciclo de vida de un objeto incluye su creación (instanciación), uso, y destrucción (recogido por el recolector de basura en lenguajes como Java)."
+      ]
+    },
+    {
+      "tag": "programacion2_recoleccion_basura",
+      "patterns": [
+        "¿Qué es la recolección de basura?",
+        "Explícame cómo funciona el garbage collector"
+      ],
+      "responses": [
+        "La recolección de basura es un proceso automático que libera memoria ocupada por objetos que ya no son accesibles en el programa. Ejemplo: System.gc() en Java."
+      ]
+    },
+    {
+      "tag": "programacion2_singleton",
+      "patterns": [
+        "¿Qué es el patrón Singleton?",
+        "Explícame cómo implementar un Singleton"
+      ],
+      "responses": [
+        "El patrón Singleton asegura que una clase tenga solo una instancia y proporciona un punto global de acceso. Ejemplo en Java: private static Singleton instancia = new Singleton();."
+      ]
+    },
+    {
+      "tag": "programacion2_observer",
+      "patterns": [
+        "¿Qué es el patrón Observer?",
+        "Explícame el uso del patrón Observer"
+      ],
+      "responses": [
+        "El patrón Observer define una relación de dependencia uno-a-muchos entre objetos, de manera que cuando uno cambia, los demás son notificados automáticamente."
+      ]
+    },
+    {
+      "tag": "programacion2_patron_factory",
+      "patterns": [
+        "¿Qué es el patrón Factory?",
+        "Dame un ejemplo del patrón Factory"
+      ],
+      "responses": [
+        "El patrón Factory proporciona una interfaz para crear objetos en una clase base sin especificar la clase exacta que será instanciada. Ejemplo: class FiguraFactory { static Figura getFigura(String tipo) { return tipo.equals('circulo') ? new Circulo() : new Cuadrado(); } }."
+      ]
+    },
+    {
+      "tag": "programacion2_reflection",
+      "patterns": [
+        "¿Qué es Reflection en programación?",
+        "Explícame cómo funciona Reflection"
+      ],
+      "responses": [
+        "Reflection es una capacidad para inspeccionar y manipular la estructura de clases, métodos y atributos en tiempo de ejecución. Ejemplo en Java: Class<?> c = Class.forName('MiClase');."
+      ]
+    },
+    {
+      "tag": "programacion2_closures",
+      "patterns": [
+        "¿Qué es un closure?",
+        "Dame ejemplos de closures en programación"
+      ],
+      "responses": [
+        "Un closure es una función que captura variables de su entorno en el momento en que fue definida, permitiendo acceder a ellas incluso fuera de su contexto original. Ejemplo en JavaScript: function suma(a) { return function(b) { return a + b; }; }."
+      ]
+    },
+    {
+      "tag": "programacion2_lambda",
+      "patterns": [
+        "¿Qué es una expresión lambda?",
+        "Dame ejemplos de expresiones lambda"
+      ],
+      "responses": [
+        "Una expresión lambda es una función anónima que puede usarse como argumento en métodos o para implementar interfaces funcionales. Ejemplo en Java: (x, y) -> x + y."
+      ]
+    },
+    {
+      "tag": "programacion2_streams",
+      "patterns": [
+        "¿Qué son los streams en programación?",
+        "Explícame el uso de streams"
+      ],
+      "responses": [
+        "Los streams permiten procesar datos en secuencias, facilitando operaciones como filtrado, mapeo y reducción. Ejemplo en Java: lista.stream().filter(x -> x > 5).collect(Collectors.toList())."
+      ]
+    },
+    {
+      "tag": "programacion2_hilos_avanzados",
+      "patterns": [
+        "¿Cómo trabajar con hilos avanzados?",
+        "Explícame los conceptos de sincronización de hilos"
+      ],
+      "responses": [
+        "El trabajo con hilos avanzados incluye sincronización para evitar condiciones de carrera. Ejemplo en Java: synchronized(metodo) { // código crítico }."
+      ]
+    },
+    {
+      "tag": "programacion2_futuros",
+      "patterns": [
+        "¿Qué es un Future en programación?",
+        "Dame ejemplos del uso de Future"
+      ],
+      "responses": [
+        "Un Future representa el resultado de una operación asincrónica. Ejemplo en Java: Future<Integer> futuro = executor.submit(() -> calcular());."
+      ]
+    },
+    {
+      "tag": "programacion2_expresiones_regulares",
+      "patterns": [
+        "¿Qué son las expresiones regulares?",
+        "Explícame cómo usar expresiones regulares"
+      ],
+      "responses": [
+        "Las expresiones regulares son patrones utilizados para buscar o manipular cadenas de texto. Ejemplo en Python: re.match(r'^[a-z]+$', 'texto')."
+      ]
+    },
+    {
+      "tag": "programacion2_apis_rest",
+      "patterns": [
+        "¿Qué es una API REST?",
+        "Explícame cómo funcionan las APIs REST"
+      ],
+      "responses": [
+        "Una API REST es una interfaz que utiliza HTTP para interactuar con recursos representados en formato JSON o XML. Ejemplo: GET /api/usuarios/1."
+      ]
+    },
+    {
+      "tag": "programacion2_token",
+      "patterns": [
+        "¿Qué es un token en programación?",
+        "Explícame el uso de tokens en APIs"
+      ],
+      "responses": [
+        "Un token es una cadena única que se utiliza para autenticar usuarios o servicios en una API. Ejemplo: Bearer Token en headers HTTP."
+      ]
+    },
+    {
+      "tag": "programacion2_cifrado",
+      "patterns": [
+        "¿Qué es el cifrado en programación?",
+        "Explícame cómo funciona el cifrado en software"
+      ],
+      "responses": [
+        "El cifrado transforma datos en un formato ilegible para proteger su contenido. Ejemplo: AES (Advanced Encryption Standard)."
+      ]
+    },
+    {
+      "tag": "programacion2_paralelismo",
+      "patterns": [
+        "¿Qué es el paralelismo en programación?",
+        "Explícame cómo implementar paralelismo"
+      ],
+      "responses": [
+        "El paralelismo divide tareas en subprocesos que se ejecutan simultáneamente en múltiples núcleos. Ejemplo en Python: with ThreadPoolExecutor() as executor: executor.map(funcion, datos)."
+      ]
+    },
+    {
+      "tag": "geometria_punto",
+      "patterns": [
+        "¿Qué es un punto en geometría?",
+        "Explícame el concepto de punto"
+      ],
+      "responses": [
+        "Un punto en geometría es una posición en el espacio que no tiene dimensiones (ancho, largo o profundidad)."
+      ]
+    },
+    {
+      "tag": "geometria_linea",
+      "patterns": [
+        "¿Qué es una línea en geometría?",
+        "Explícame el concepto de línea"
+      ],
+      "responses": [
+        "Una línea es una sucesión infinita de puntos que se extiende en ambas direcciones. No tiene grosor y es unidimensional."
+      ]
+    },
+    {
+      "tag": "geometria_segmento",
+      "patterns": [
+        "¿Qué es un segmento de línea?",
+        "Explícame cómo calcular un segmento"
+      ],
+      "responses": [
+        "Un segmento de línea es una parte de una línea que está limitada por dos puntos extremos."
+      ]
+    },
+    {
+      "tag": "geometria_recta",
+      "patterns": [
+        "¿Qué es una recta?",
+        "Dame ejemplos de rectas en geometría"
+      ],
+      "responses": [
+        "Una recta es una línea infinita que no tiene principio ni fin. Se representa como una sucesión de puntos alineados."
+      ]
+    },
+    {
+      "tag": "geometria_angulo",
+      "patterns": [
+        "¿Qué es un ángulo?",
+        "Explícame cómo medir ángulos"
+      ],
+      "responses": [
+        "Un ángulo es la apertura formada entre dos rectas que se intersectan en un punto, llamado vértice. Se mide en grados o radianes."
+      ]
+    },
+    {
+      "tag": "geometria_triangulo",
+      "patterns": [
+        "¿Qué es un triángulo?",
+        "Dame ejemplos de tipos de triángulos"
+      ],
+      "responses": [
+        "Un triángulo es un polígono con tres lados y tres ángulos. Se clasifica por sus lados (equilátero, isósceles, escaleno) y sus ángulos (acutángulo, rectángulo, obtusángulo)."
+      ]
+    },
+    {
+      "tag": "geometria_cuadrado",
+      "patterns": [
+        "¿Qué es un cuadrado?",
+        "Explícame cómo calcular el área de un cuadrado"
+      ],
+      "responses": [
+        "Un cuadrado es un polígono de cuatro lados iguales y ángulos rectos. Su área se calcula como lado²."
+      ]
+    },
+    {
+      "tag": "geometria_circulo",
+      "patterns": [
+        "¿Qué es un círculo?",
+        "Dame la fórmula del área de un círculo"
+      ],
+      "responses": [
+        "Un círculo es una figura plana limitada por una circunferencia. Su área se calcula como A = πr², donde r es el radio."
+      ]
+    },
+    {
+      "tag": "geometria_perimetro",
+      "patterns": [
+        "¿Qué es el perímetro?",
+        "¿Cómo calcular el perímetro de un polígono?"
+      ],
+      "responses": [
+        "El perímetro es la suma de las longitudes de todos los lados de una figura geométrica."
+      ]
+    },
+    {
+      "tag": "geometria_area",
+      "patterns": [
+        "¿Qué es el área?",
+        "¿Cómo calcular el área de un polígono?"
+      ],
+      "responses": [
+        "El área es la medida de la superficie de una figura geométrica. Se calcula según la fórmula específica para cada tipo de figura."
+      ]
+    },
+    {
+      "tag": "geometria_volumen",
+      "patterns": [
+        "¿Qué es el volumen?",
+        "¿Cómo calcular el volumen de una figura tridimensional?"
+      ],
+      "responses": [
+        "El volumen mide el espacio ocupado por un objeto tridimensional. Ejemplo: el volumen de un cubo es V = lado³."
+      ]
+    },
+    {
+      "tag": "geometria_poligonos",
+      "patterns": [
+        "¿Qué es un polígono?",
+        "Dame ejemplos de polígonos"
+      ],
+      "responses": [
+        "Un polígono es una figura geométrica cerrada formada por tres o más segmentos de línea. Ejemplos: triángulos, cuadrados, pentágonos."
+      ]
+    },
+    {
+      "tag": "geometria_distancia_puntos",
+      "patterns": [
+        "¿Cómo calcular la distancia entre dos puntos?",
+        "Explícame la fórmula de distancia entre puntos"
+      ],
+      "responses": [
+        "La distancia entre dos puntos en un plano se calcula como d = √((x2 - x1)² + (y2 - y1)²)."
+      ]
+    },
+    {
+      "tag": "geometria_mediatriz",
+      "patterns": [
+        "¿Qué es la mediatriz de un segmento?",
+        "Dame ejemplos de mediatrices"
+      ],
+      "responses": [
+        "La mediatriz es la línea perpendicular que pasa por el punto medio de un segmento."
+      ]
+    },
+    {
+      "tag": "geometria_bisectriz",
+      "patterns": [
+        "¿Qué es la bisectriz de un ángulo?",
+        "Explícame cómo encontrar la bisectriz"
+      ],
+      "responses": [
+        "La bisectriz es la línea que divide un ángulo en dos partes iguales."
+      ]
+    },
+    {
+      "tag": "geometria_circunferencia",
+      "patterns": [
+        "¿Qué es una circunferencia?",
+        "Dame la fórmula del perímetro de una circunferencia"
+      ],
+      "responses": [
+        "Una circunferencia es la curva cerrada donde todos los puntos están a la misma distancia de un punto central. Su perímetro se calcula como P = 2πr."
+      ]
+    },
+    {
+      "tag": "geometria_tangente",
+      "patterns": [
+        "¿Qué es una tangente en geometría?",
+        "Explícame cómo identificar una tangente"
+      ],
+      "responses": [
+        "Una tangente es una línea que toca una circunferencia o curva en un solo punto sin cortarla."
+      ]
+    },
+    {
+      "tag": "geometria_paralelismo",
+      "patterns": [
+        "¿Qué significa que dos líneas sean paralelas?",
+        "Dame ejemplos de líneas paralelas"
+      ],
+      "responses": [
+        "Dos líneas son paralelas si están en el mismo plano y nunca se intersectan, sin importar cuánto se extiendan."
+      ]
+    },
+    {
+      "tag": "geometria_perpendicularidad",
+      "patterns": [
+        "¿Qué significa que dos líneas sean perpendiculares?",
+        "Explícame cómo identificar líneas perpendiculares"
+      ],
+      "responses": [
+        "Dos líneas son perpendiculares si se intersectan formando un ángulo de 90°. Ejemplo: los ejes X e Y en un plano cartesiano."
+      ]
+    },
+    {
+      "tag": "geometria_triangulos_semiperimetro",
+      "patterns": [
+        "¿Qué es el semiperímetro de un triángulo?",
+        "Explícame cómo calcular el semiperímetro"
+      ],
+      "responses": [
+        "El semiperímetro de un triángulo es la mitad del perímetro. Se calcula como s = (a + b + c) / 2, donde a, b y c son los lados del triángulo."
+      ]
+    },
+    {
+      "tag": "geometria_formula_heron",
+      "patterns": [
+        "¿Qué es la fórmula de Herón?",
+        "Explícame cómo usar la fórmula de Herón"
+      ],
+      "responses": [
+        "La fórmula de Herón calcula el área de un triángulo dado sus tres lados: A = √(s(s-a)(s-b)(s-c)), donde s es el semiperímetro."
+      ]
+    },
+    {
+      "tag": "geometria_altura_triangulo",
+      "patterns": [
+        "¿Cómo calcular la altura de un triángulo?",
+        "Dame la fórmula de la altura de un triángulo"
+      ],
+      "responses": [
+        "La altura de un triángulo se calcula dividiendo el área entre la base: h = (2A) / b."
+      ]
+    },
+    {
+      "tag": "geometria_triangulos_semirrectos",
+      "patterns": [
+        "¿Qué es un triángulo semirrecto?",
+        "Explícame el concepto de triángulo semirrecto"
+      ],
+      "responses": [
+        "Un triángulo semirrecto es un triángulo isósceles donde uno de los ángulos de la base es de 45°. Se usa para cálculos rápidos con diagonales."
+      ]
+    },
+    {
+      "tag": "geometria_circunferencia_inscrita",
+      "patterns": [
+        "¿Qué es una circunferencia inscrita?",
+        "Dame ejemplos de circunferencias inscritas"
+      ],
+      "responses": [
+        "Una circunferencia inscrita está dentro de un polígono y toca todos sus lados. Su centro es el punto donde se intersectan las bisectrices."
+      ]
+    },
+    {
+      "tag": "geometria_circunferencia_circunscrita",
+      "patterns": [
+        "¿Qué es una circunferencia circunscrita?",
+        "Explícame cómo hallar la circunferencia circunscrita"
+      ],
+      "responses": [
+        "Una circunferencia circunscrita pasa por todos los vértices de un polígono. Su centro es el circuncentro, donde se intersectan las mediatrices."
+      ]
+    },
+    {
+      "tag": "geometria_seccion_conica",
+      "patterns": [
+        "¿Qué son las secciones cónicas?",
+        "Dame ejemplos de secciones cónicas"
+      ],
+      "responses": [
+        "Las secciones cónicas son figuras obtenidas al cortar un cono con un plano. Ejemplos: círculos, elipses, parábolas e hipérbolas."
+      ]
+    },
+    {
+      "tag": "geometria_elipse",
+      "patterns": [
+        "¿Qué es una elipse?",
+        "Explícame las propiedades de una elipse"
+      ],
+      "responses": [
+        "Una elipse es una figura formada por todos los puntos cuya suma de distancias a dos focos es constante. Su fórmula general es (x²/a²) + (y²/b²) = 1."
+      ]
+    },
+    {
+      "tag": "geometria_parabola",
+      "patterns": [
+        "¿Qué es una parábola?",
+        "Dame ejemplos de parábolas en geometría"
+      ],
+      "responses": [
+        "Una parábola es una figura formada por todos los puntos que están a la misma distancia de un punto fijo (foco) y una línea fija (directriz)."
+      ]
+    },
+    {
+      "tag": "geometria_hiperbola",
+      "patterns": [
+        "¿Qué es una hipérbola?",
+        "Explícame las propiedades de una hipérbola"
+      ],
+      "responses": [
+        "Una hipérbola es una figura formada por todos los puntos cuya diferencia de distancias a dos focos es constante. Su fórmula general es (x²/a²) - (y²/b²) = 1."
+      ]
+    },
+    {
+      "tag": "geometria_diedros",
+      "patterns": [
+        "¿Qué es un ángulo diedro?",
+        "Explícame cómo medir un ángulo diedro"
+      ],
+      "responses": [
+        "Un ángulo diedro es el ángulo formado entre dos planos que se intersectan. Se mide utilizando proyecciones ortogonales."
+      ]
+    },
+    {
+      "tag": "geometria_poliedros",
+      "patterns": [
+        "¿Qué es un poliedro?",
+        "Dame ejemplos de poliedros"
+      ],
+      "responses": [
+        "Un poliedro es un sólido tridimensional con caras planas. Ejemplos: cubo, prisma, pirámide."
+      ]
+    },
+    {
+      "tag": "geometria_prisma",
+      "patterns": [
+        "¿Qué es un prisma?",
+        "Explícame cómo calcular el volumen de un prisma"
+      ],
+      "responses": [
+        "Un prisma es un poliedro con bases paralelas e iguales. Su volumen se calcula como V = área_base × altura."
+      ]
+    },
+    {
+      "tag": "geometria_piramide",
+      "patterns": [
+        "¿Qué es una pirámide?",
+        "¿Cómo calcular el volumen de una pirámide?"
+      ],
+      "responses": [
+        "Una pirámide es un poliedro con una base poligonal y un vértice común. Su volumen se calcula como V = (1/3) × área_base × altura."
+      ]
+    },
+    {
+      "tag": "geometria_esfera",
+      "patterns": [
+        "¿Qué es una esfera?",
+        "Explícame cómo calcular el volumen de una esfera"
+      ],
+      "responses": [
+        "Una esfera es un sólido tridimensional formado por todos los puntos equidistantes de un centro. Su volumen se calcula como V = (4/3)πr³."
+      ]
+    },
+    {
+      "tag": "geometria_cono",
+      "patterns": [
+        "¿Qué es un cono?",
+        "¿Cómo calcular el volumen de un cono?"
+      ],
+      "responses": [
+        "Un cono es un sólido con una base circular y un vértice. Su volumen se calcula como V = (1/3)πr²h."
+      ]
+    },
+    {
+      "tag": "geometria_cilindro",
+      "patterns": [
+        "¿Qué es un cilindro?",
+        "Dame la fórmula para calcular el volumen de un cilindro"
+      ],
+      "responses": [
+        "Un cilindro es un sólido con bases circulares paralelas. Su volumen se calcula como V = πr²h."
+      ]
+    },
+    {
+      "tag": "geometria_coordenadas_3d",
+      "patterns": [
+        "¿Cómo funcionan las coordenadas en 3D?",
+        "Explícame las coordenadas tridimensionales"
+      ],
+      "responses": [
+        "En el espacio tridimensional, un punto se representa como (x, y, z), donde x, y y z son sus proyecciones en los ejes coordenados."
+      ]
+    },
+    {
+      "tag": "geometria_vectores",
+      "patterns": [
+        "¿Qué es un vector en geometría?",
+        "Dame ejemplos de vectores"
+      ],
+      "responses": [
+        "Un vector es una cantidad que tiene magnitud y dirección. Se representa como (x, y) en 2D o (x, y, z) en 3D."
+      ]
+    },
+    {
+      "tag": "general_definicion",
+      "patterns": [
+        "¿Qué significa el término 'vector'?",
+        "Dame la definición de 'vector'"
+      ],
+      "responses": [
+        "Un vector es una cantidad que tiene magnitud y dirección. Se representa en geometría o física como una flecha en un espacio bidimensional o tridimensional."
+      ]
+    },
+    {
+      "tag": "general_importancia",
+      "patterns": [
+        "¿Por qué es importante la conservación de la energía?",
+        "Explícame la importancia de la conservación de la energía"
+      ],
+      "responses": [
+        "La conservación de la energía es crucial porque nos permite entender cómo la energía se transforma en diferentes sistemas sin ser creada ni destruida, lo que es fundamental para aplicaciones en ingeniería, física y sostenibilidad."
+      ]
+    },
+    {
+      "tag": "general_ejemplo",
+      "patterns": [
+        "¿Me puedes dar un ejemplo de una función?",
+        "Dame ejemplos relacionados con funciones en programación"
+      ],
+      "responses": [
+        "Un ejemplo de una función en programación es la función `suma` en Python: `def suma(a, b): return a + b`. Esta función recibe dos parámetros y devuelve su suma."
+      ]
+    },
+    {
+      "tag": "general_aplicacion",
+      "patterns": [
+        "¿Dónde se aplica el cálculo de áreas?",
+        "Dame ejemplos de aplicaciones de cálculo de áreas"
+      ],
+      "responses": [
+        "El cálculo de áreas se aplica en diseño arquitectónico, cálculo de terrenos en agrimensura, y determinación de superficies en ingeniería civil."
+      ]
+    },
+    {
+      "tag": "general_fundamentos",
+      "patterns": [
+        "¿Cuáles son los fundamentos de la programación orientada a objetos?",
+        "Explícame los principios básicos de la POO"
+      ],
+      "responses": [
+        "Los fundamentos de la programación orientada a objetos incluyen la encapsulación, la herencia, el polimorfismo y la abstracción. Estos conceptos ayudan a estructurar y organizar el código de manera eficiente."
+      ]
+    },
+    {
+      "tag": "general_diferencias",
+      "patterns": [
+        "¿Cuál es la diferencia entre un cilindro y un cono?",
+        "Dame una comparación entre cilindro y cono"
+      ],
+      "responses": [
+        "La diferencia principal es que el cilindro tiene dos bases circulares paralelas, mientras que el cono tiene solo una base circular y un vértice. Además, el volumen del cilindro es mayor dado el mismo radio y altura."
+      ]
+    },
+    {
+      "tag": "general_herramientas",
+      "patterns": [
+        "¿Qué herramientas se usan para modelar UML?",
+        "¿Qué recursos necesito para trabajar con diagramas UML?"
+      ],
+      "responses": [
+        "Para modelar UML, puedes usar herramientas como Lucidchart, StarUML o Microsoft Visio. Estas herramientas permiten crear diagramas de clases, secuencia y otros tipos de diagramas UML."
+      ]
+    },
+    {
+      "tag": "general_origen",
+      "patterns": [
+        "¿Cuál es el origen del álgebra?",
+        "Dime la historia del álgebra"
+      ],
+      "responses": [
+        "El álgebra tiene su origen en la antigua Mesopotamia, donde se usaban ecuaciones para resolver problemas cotidianos. Fue formalizado en la obra 'Al-Kitab al-Muhtasar fi Hisab al-Jabr wal-Muqabala' del matemático persa Al-Juarismi."
+      ]
+    },
+    {
+      "tag": "general_consejos",
+      "patterns": [
+        "¿Tienes consejos para aprender geometría?",
+        "¿Cómo puedo mejorar en geometría?"
+      ],
+      "responses": [
+        "Para aprender geometría, practica dibujando figuras, usa herramientas como transportadores y compases, y resuelve problemas aplicados en la vida real, como calcular áreas de objetos cotidianos."
+      ]
+    },
+    {
+      "tag": "general_relacion",
+      "patterns": [
+        "¿Cómo se relaciona la física con las matemáticas?",
+        "Explícame la conexión entre geometría y álgebra"
+      ],
+      "responses": [
+        "La física utiliza las matemáticas como lenguaje para describir fenómenos naturales, mientras que la geometría y el álgebra se combinan para resolver problemas como la determinación de áreas, distancias y trayectorias."
+      ]
+    }
+  ]
+}
