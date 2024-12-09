@@ -6,6 +6,7 @@ const Chatbot = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [mensajeUsuario, setMensajeUsuario] = useState("");
   const [mensajes, setMensajes] = useState([]);
+  const [isTyping, setIsTyping] = useState(false);
 
   const toggleBot = () => {
     isOpen ? setIsOpen(false) : setIsOpen(true);
@@ -14,10 +15,12 @@ const Chatbot = () => {
   const handleSend = async () => {
     if (!mensajeUsuario.trim()) return;
 
-    // Agregar mensaje del usuario a la conversación
     const newMessages = [...mensajes, { sender: "user", text: mensajeUsuario }];
     setMensajes(newMessages);
+    setMensajeUsuario("");
 
+    setIsTyping(true);
+  
     try {
       const response = await fetch("http://localhost:5000/chat", {
         method: "POST",
@@ -25,22 +28,27 @@ const Chatbot = () => {
         body: JSON.stringify({ message: mensajeUsuario }),
       });
       const data = await response.json();
-
-      // Agregar respuesta del bot a la conversación
-      setMensajes([...newMessages, { sender: "bot", text: data.reply }]);
+  
+      setTimeout(() => {
+        setMensajes([...newMessages, { sender: "bot", text: data.reply }]);
+        setIsTyping(false);
+      }, 1000);
     } catch (error) {
       console.error("Error al enviar el mensaje:", error);
-      setMensajes([
-        ...newMessages,
-        {
-          sender: "bot",
-          text: "Ocurrió un error. Por favor, intenta de nuevo.",
-        },
-      ]);
+  
+      setTimeout(() => {
+        setMensajes([
+          ...newMessages,
+          {
+            sender: "bot",
+            text: "Ocurrió un error. Por favor, intenta de nuevo.",
+          },
+        ]);
+        setIsTyping(false);
+      }, 1000);
     }
-
-    setMensajeUsuario("");
   };
+  
 
   if (!isOpen) {
     return (
@@ -72,19 +80,25 @@ const Chatbot = () => {
           {mensajes.map((msg, index) => (
             <div
               key={index}
-              className={msg.sender === "user" ? "user-mensaje" : "akshu-mensaje"}
+              className={
+                msg.sender === "user" ? "user-mensaje" : "akshu-mensaje"
+              }
             >
               {msg.text}
             </div>
-          ))}</div>
+          ))}
+          {isTyping && <div className="typing-indicator">Escribiendo...</div>}
+        </div>
+
         <div className="input-container">
-            <input id="chatbot-input"
-                type="text"
-                value={mensajeUsuario}
-                onChange={(e) => setMensajeUsuario(e.target.value)}
-                placeholder="Escribe tu pregunta..."
-            />
-            <button onClick={handleSend}>Enviar</button>
+          <input
+            id="chatbot-input"
+            type="text"
+            value={mensajeUsuario}
+            onChange={(e) => setMensajeUsuario(e.target.value)}
+            placeholder="Escribe tu pregunta..."
+          />
+          <button onClick={handleSend}>Enviar</button>
         </div>
         <img src={gato} alt=""></img>
       </div>
