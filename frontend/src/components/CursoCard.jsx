@@ -3,6 +3,7 @@ import { Card, Button } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import defaultImage from '../assets/libros.png'; // Replace with the path to your default image
+import "./Contenedor.css";
 
 const { Meta } = Card;
 

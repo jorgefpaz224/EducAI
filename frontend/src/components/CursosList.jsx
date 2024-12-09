@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Row, Col } from 'antd';
 import axios from 'axios';
 import CursoCard from './CursoCard';
+import 
 
 const CursosList = ({ id_maestro, id_estudiante, userType }) => {
   const [cursos, setCursos] = useState([]);
