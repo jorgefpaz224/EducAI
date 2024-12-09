@@ -69,7 +69,6 @@ async function createTutorReunion(tutorReunionData) {
       id_estudiante,
       FechaReunion,
       Descripcion,
-      estado: 'Scheduled',
     });
 
     return result;
