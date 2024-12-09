@@ -72,7 +72,7 @@ app.post('/chat', (req, res) => {
     const intentTag = classifications[0]?.label || null;
     const confidence = classifications[0]?.value || 0;
 
-    const CONFIDENCE_THRESHOLD = 0;
+    const CONFIDENCE_THRESHOLD = 0.09;
     if (confidence < CONFIDENCE_THRESHOLD || !intentTag) {
       return res.json({
         reply: "Lo siento, no estoy seguro de cómo responder esa pregunta. ¿Puedes ser más específico?"

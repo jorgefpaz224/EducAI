@@ -68,17 +68,17 @@ const Chatbot = () => {
             />
           </svg>
         </button>
-        <div className="chatbox">
+        <div className="chatbot-mensajes">
           {mensajes.map((msg, index) => (
             <div
               key={index}
-              className={msg.sender === "user" ? "user-message" : "bot-message"}
+              className={msg.sender === "user" ? "user-mensaje" : "akshu-mensaje"}
             >
               {msg.text}
             </div>
           ))}</div>
         <div className="input-container">
-            <input
+            <input id="chatbot-input"
                 type="text"
                 value={mensajeUsuario}
                 onChange={(e) => setMensajeUsuario(e.target.value)}

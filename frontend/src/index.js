@@ -11,6 +11,8 @@ import AgendarTutorias from './pages/AgendarTutoria';
 import EvaluacionPage from './pages/EvaluacionPage'; // Import the new page
 import PresentacionPage from './pages/PresentacionPage'; // Import the PresentacionPage
 
+import './index.css';
+
 
 const router = createBrowserRouter([
   {

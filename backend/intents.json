@@ -1,39 +1,54 @@
 {
-    "intents": [
-      {
-        "tag": "experiencia_usuario",
-        "patterns": [
-          "¿Qué es la experiencia de usuario?",
-          "Define UX",
-          "¿Qué significa experiencia de usuario?",
-          "Explica la experiencia de usuario"
-        ],
-        "responses": [
-          "La experiencia de usuario (UX) se refiere a cómo una persona se siente al interactuar con un sistema o producto. Incluye aspectos de usabilidad, accesibilidad y placer en la interacción."
-        ]
-      },
-      {
-        "tag": "tecnologias_emergentes",
-        "patterns": [
-          "¿Qué son las tecnologías emergentes?",
-          "Define tecnologías emergentes",
-          "Ejemplos de tecnologías emergentes"
-        ],
-        "responses": [
-          "Las tecnologías emergentes son innovaciones técnicas que están en desarrollo o se espera que lo estén en los próximos años, y que pueden alterar el status quo. Ejemplos incluyen la inteligencia artificial, blockchain y la computación cuántica."
-        ]
-      },
-      {
-        "tag": "compuertas_logicas",
-        "patterns": [
-          "¿Qué son las compuertas lógicas?",
-          "Define compuerta lógica",
-          "Tipos de compuertas lógicas"
-        ],
-        "responses": [
-          "Las compuertas lógicas son dispositivos electrónicos que realizan operaciones booleanas básicas, fundamentales en circuitos digitales. Los tipos principales son AND, OR, NOT, NAND, NOR, XOR y XNOR."
-        ]
-      }
-    ]
-  }
-  
+  "intents": [
+    {
+      "tag": "algebra_variables",
+      "patterns": ["¿Qué es una variable en álgebra?", "Explícame el concepto de variable"],
+      "responses": ["En álgebra, una variable es un símbolo, generalmente una letra, que representa un valor desconocido o que puede cambiar."]
+    },
+    {
+      "tag": "algebra_ecuaciones_lineales",
+      "patterns": ["¿Qué es una ecuación lineal?", "Dame ejemplos de ecuaciones lineales"],
+      "responses": ["Una ecuación lineal es una ecuación de primer grado que puede representarse en la forma ax + b = 0, donde a y b son constantes."]
+    },
+    {
+      "tag": "algebra_funcion_cuadratica",
+      "patterns": ["¿Qué es una función cuadrática?", "Explícame las funciones cuadráticas"],
+      "responses": ["Una función cuadrática es una función de la forma f(x) = ax² + bx + c, donde a, b y c son constantes, y a ≠ 0."]
+    },
+    {
+      "tag": "algebra_sistemas_ecuaciones",
+      "patterns": ["¿Cómo resolver un sistema de ecuaciones?", "Dame un ejemplo de resolver sistemas de ecuaciones"],
+      "responses": ["Un sistema de ecuaciones puede resolverse mediante métodos como sustitución, igualación o eliminación para encontrar valores de las variables."]
+    },
+    {
+      "tag": "algebra_factorizacion",
+      "patterns": ["¿Qué es la factorización?", "Explícame cómo factorizar un polinomio"],
+      "responses": ["La factorización es el proceso de descomponer un polinomio en el producto de factores más simples que al multiplicarse resultan en el polinomio original."]
+    },
+    {
+      "tag": "algebra_matrices",
+      "patterns": ["¿Qué es una matriz en álgebra?", "Dame un ejemplo de matriz"],
+      "responses": ["Una matriz es una disposición rectangular de números en filas y columnas, que se utiliza para representar sistemas de ecuaciones o transformaciones lineales."]
+    },
+    {
+      "tag": "algebra_determinantes",
+      "patterns": ["¿Qué es un determinante?", "¿Cómo calcular un determinante?"],
+      "responses": ["El determinante es un valor escalar asociado con una matriz cuadrada, utilizado para resolver sistemas de ecuaciones y analizar propiedades de la matriz."]
+    },
+    {
+      "tag": "algebra_numeros_reales",
+      "patterns": ["¿Qué son los números reales?", "Explícame los conjuntos de números reales"],
+      "responses": ["Los números reales son el conjunto de todos los números que incluyen los racionales (fracciones) y los irracionales (como π y √2)."]
+    },
+    {
+      "tag": "algebra_valor_absoluto",
+      "patterns": ["¿Qué es el valor absoluto?", "Dame ejemplos de valor absoluto"],
+      "responses": ["El valor absoluto de un número es su distancia desde el cero en la recta numérica, sin importar la dirección. Por ejemplo, |−5| = 5."]
+    },
+    {
+      "tag": "algebra_raiz_cuadrada",
+      "patterns": ["¿Qué es una raíz cuadrada?", "Explícame cómo calcular raíces cuadradas"],
+      "responses": ["La raíz cuadrada de un número es otro número que, al multiplicarse por sí mismo, da como resultado el número original. Por ejemplo, la raíz cuadrada de 9 es 3."]
+    }
+  ]
+}
