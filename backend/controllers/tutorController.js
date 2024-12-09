@@ -5,7 +5,7 @@ async function getAllTutores(req, res) {
     const result = await tutorService.getAllTutores();
     res.json(result);
   } catch (error) {
-    res.status(500).json({ error: 'Error fetching all tutores' });
+    res.status(500).json({ error: 'Error obteniendo todos los tutores' });
   }
 }
 
@@ -16,7 +16,7 @@ async function getTutoresByCurso(req, res) {
     const result = await tutorService.getTutoresByCurso(id_curso);
     res.json(result);
   } catch (error) {
-    res.status(500).json({ error: 'Error fetching tutores by curso' });
+    res.status(500).json({ error: 'Error obteniendo tutores por curso' });
   }
 }
 

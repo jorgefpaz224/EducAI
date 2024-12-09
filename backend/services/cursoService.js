@@ -9,7 +9,7 @@ async function getCursosByMaestro(id_maestro) {
 
     return result;
   } catch (error) {
-    console.error('Error fetching cursos by maestro:', error);
+    console.error('Error: ', error);
     throw error;
   }
 }
@@ -23,7 +23,7 @@ async function getCursosByEstudiante(id_estudiante) {
 
     return result;
   } catch (error) {
-    console.error('Error fetching cursos by estudiante:', error);
+    console.error('Error fetching cursos by estudiante: ', error);
     throw error;
   }
 }

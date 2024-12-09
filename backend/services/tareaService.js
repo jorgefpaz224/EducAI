@@ -5,14 +5,13 @@ async function createTarea(tareaData) {
   const { id_curso, Titulo, Descripcion, Fecha_Entrega, Puntaje } = tareaData;
 
   try {
-    // Start a transaction
+
     await db.transaction(async trx => {
-      // Calculate the sum of all puntajes for the given course
       const [{ totalPuntaje }] = await trx('Tarea')
         .where({ id_curso })
         .sum('Puntaje as totalPuntaje');
 
-      // Check if the sum of puntajes plus the new puntaje is less than or equal to 100
+   
       const totalPuntajeInt = totalPuntaje || 0;
       const puntajeInt = parseInt(Puntaje, 10);
 
@@ -23,7 +22,6 @@ async function createTarea(tareaData) {
         throw new Error('The sum of all puntajes for the course exceeds 100');
       }
 
-      // Insert the new tarea
       const [newTarea] = await trx('Tarea').insert({
         id_curso,
         Titulo,
@@ -32,18 +30,16 @@ async function createTarea(tareaData) {
         Puntaje: puntajeInt
       }).returning('id_tarea');
 
-      // Ensure id_tarea is an integer
       const tareaId = parseInt(newTarea.id_tarea, 10);
 
-      // Get all students enrolled in the course
+
       const estudiantes = await trx('EstudianteCurso')
         .select('id_estudiante')
         .where({ id_curso });
 
-      // Insert records in EstudianteTarea for each student
       const estudianteTareas = estudiantes.map(estudiante => ({
         id_estudiante: estudiante.id_estudiante,
-        id_tarea: tareaId, // Ensure id_tarea is an integer
+        id_tarea: tareaId, 
         Tarea_Presentada: 0,
         estado: 'Sin Presentar',
         Puntuacion: null
@@ -54,7 +50,7 @@ async function createTarea(tareaData) {
 
     return { success: true };
   } catch (error) {
-    console.error('Error creating tarea:', error);
+    console.error('Error: ', error);
     throw error;
   }
 }
@@ -138,12 +134,11 @@ async function getTotalPuntajeByCurso(id_curso) {
         .select('Tarea.*', 'EstudianteTarea.id_estudiante_tareas', 'EstudianteTarea.Tarea_Presentada', 'EstudianteTarea.estado', 'EstudianteTarea.Puntuacion', 'Estudiante.PrimerNombre', 'Estudiante.Apellido')
         .where({
           'Tarea.id_curso': id_curso
-         // 'EstudianteTarea.Tarea_Presentada': 1
         });
   
       return result;
     } catch (error) {
-      console.error('Error fetching presented tareas by curso:', error);
+      console.error('Error: ', error);
       throw error;
     }
   }
@@ -158,7 +153,7 @@ async function getTotalPuntajeByCurso(id_curso) {
       console.log('Update result:', result);
       return result;
     } catch (error) {
-      console.error('Error updating EstudianteTarea:', error);
+      console.error('Error:', error);
       throw error;
     }
   }
@@ -171,7 +166,7 @@ async function getTotalPuntajeByCurso(id_curso) {
   
       return result;
     } catch (error) {
-      console.error('Error fetching tareas by curso:', error);
+      console.error('Error: ', error);
       throw error;
     }
   }

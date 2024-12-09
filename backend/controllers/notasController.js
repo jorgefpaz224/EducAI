@@ -7,7 +7,7 @@ async function getCursoPuntuacionTotal(req, res) {
     const result = await notasService.getCursoPuntuacionTotal(id_estudiante);
     res.json(result);
   } catch (error) {
-    res.status(500).json({ error: 'Error fetching curso puntuacion total' });
+    res.status(500).json({ error: 'Error obteniendo puntuacion total' });
   }
 }
 
@@ -19,7 +19,7 @@ async function updateEstudianteTarea(req, res) {
       const result = await notasService.updateEstudianteTarea(id_estudiante_tarea, updateFields);
       res.json({ success: true, result });
     } catch (error) {
-      res.status(500).json({ error: 'Error updating EstudianteTarea' });
+      res.status(500).json({ error: 'Error actualizando EstudianteTarea' });
     }
   }
 

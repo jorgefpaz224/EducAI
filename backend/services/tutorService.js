@@ -8,7 +8,7 @@ async function getAllTutores() {
 
     return result;
   } catch (error) {
-    console.error('Error fetching all tutores:', error);
+    console.error('Error:', error);
     throw error;
   }
 }
@@ -21,7 +21,7 @@ async function getTutoresByCurso(id_curso) {
 
     return result;
   } catch (error) {
-    console.error('Error fetching tutores by curso:', error);
+    console.error('Error:', error);
     throw error;
   }
 }
@@ -30,19 +30,18 @@ async function createTutorReunion(tutorReunionData) {
   try {
     const { id_tutor, id_estudiante, FechaReunion, Descripcion } = tutorReunionData;
 
-    // Check if FechaReunion is at least three days after the current date
     const currentDate = moment().startOf('day');
     const reunionDate = moment(FechaReunion).startOf('day');
     if (reunionDate.diff(currentDate, 'days') < 3) {
       throw new Error('La fecha de la reunión debe ser al menos tres días después de la fecha actual.');
     }
 
-    // Check if the day is not a Sunday
+    // Chequear si no es domingo
     if (reunionDate.day() === 0) {
       throw new Error('La fecha de la reunión no puede ser un domingo.');
     }
 
-    // Check if the student already has a meeting on the same day
+    // Chequear si no tiene reunion el mismo dia
     const studentMeetingCount = await db('TutorReunion')
       .where('id_estudiante', id_estudiante)
       .andWhere(db.raw('CAST(FechaReunion AS DATE) = ?', [reunionDate.format('YYYY-MM-DD')]))
@@ -53,7 +52,7 @@ async function createTutorReunion(tutorReunionData) {
       throw new Error('El estudiante ya tiene una reunión programada para el mismo día.');
     }
 
-    // Check if the tutor has no more than three scheduled meetings on the same day
+    // Chequear que no tenga mas de 3 reuniones programadas el mismo dia
     const tutorMeetingCount = await db('TutorReunion')
       .where('id_tutor', id_tutor)
       .andWhere(db.raw('CAST(FechaReunion AS DATE) = ?', [reunionDate.format('YYYY-MM-DD')]))
@@ -74,7 +73,7 @@ async function createTutorReunion(tutorReunionData) {
 
     return result;
   } catch (error) {
-    console.error('Error creating tutor reunion:', error);
+    console.error('Error: ', error);
     throw error;
   }
 }

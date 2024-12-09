@@ -17,7 +17,7 @@ async function getCursoPuntuacionTotal(id_estudiante) {
 
     return result;
   } catch (error) {
-    console.error('Error fetching curso puntuacion total:', error);
+    console.error('Error: ', error);
     throw error;
   }
   }
@@ -30,7 +30,7 @@ async function getCursoPuntuacionTotal(id_estudiante) {
   
       return result;
     } catch (error) {
-      console.error('Error updating EstudianteTarea:', error);
+      console.error('Error: ', error);
       throw error;
     }
   }

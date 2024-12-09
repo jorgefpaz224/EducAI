@@ -73,7 +73,7 @@ async function deleteTarea(req, res) {
       const result = await tareaService.getPresentedTareasByCurso(id_curso);
       res.json(result);
     } catch (error) {
-      res.status(500).json({ error: 'Error fetching presented tareas by curso' });
+      res.status(500).json({ error: 'Error obteniendo tareas por curso' });
     }
   }
 
@@ -85,7 +85,7 @@ async function deleteTarea(req, res) {
       const result = await tareaService.updateEstudianteTarea(id_estudiante_tareas, updateFields);
       res.json({ success: true, result });
     } catch (error) {
-      res.status(500).json({ error: 'Error updating EstudianteTarea' });
+      res.status(500).json({ error: 'Error actualizando EstudianteTarea' });
     }
   }
 
@@ -96,7 +96,7 @@ async function deleteTarea(req, res) {
       const result = await tareaService.getTareasByCurso(id_curso);
       res.json(result);
     } catch (error) {
-      res.status(500).json({ error: 'Error fetching tareas by curso' });
+      res.status(500).json({ error: 'Error' });
     }
   }
   
