@@ -90,7 +90,7 @@ const TablaEvaluacion = ({ id_curso }) => {
             onChange={(e) => setEditingPuntuacion({ ...editingPuntuacion, [record.id_estudiante_tareas]: e.target.value })}
           />
         ) : (
-          `${record.Puntuacion}/${record.Puntaje}`
+          record.Puntuacion !== null ? `${record.Puntuacion}/${record.Puntaje}` : `-/${record.Puntaje}`
         )
       ),
     },
@@ -107,12 +107,7 @@ const TablaEvaluacion = ({ id_curso }) => {
     },
   ];
 
-  return(
-
-    <Table dataSource={dataSource} columns={columns} rowKey="id_estudiante_tareas" />
-
-
-  );
+  return <Table dataSource={dataSource} columns={columns} rowKey="id_estudiante_tareas" />;
 };
 
 export default TablaEvaluacion;

@@ -1,4 +1,3 @@
-const { get } = require('../routes/cursoRoutes');
 const tutorService = require('../services/tutorService');
 
 async function getAllTutores(req, res) {

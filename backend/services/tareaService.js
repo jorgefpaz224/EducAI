@@ -1,51 +1,63 @@
 const db = require('../db');
+const moment = require('moment');
 
 async function createTarea(tareaData) {
-    const { id_curso, Titulo, Descripcion, Fecha_Entrega, Puntaje } = tareaData;
-  
-    try {
-   
-      await db.transaction(async trx => {
-        const [{ totalPuntaje }] = await trx('Tarea')
-          .where({ id_curso })
-          .sum('Puntaje as totalPuntaje');
-  
-    
-        if ((totalPuntaje || 0) + Puntaje > 100) {
-          throw new Error('The suma de todos los puntajes excede 100 puntos');
-        }
+  const { id_curso, Titulo, Descripcion, Fecha_Entrega, Puntaje } = tareaData;
 
-        const [id_tarea] = await trx('Tarea').insert({
-          id_curso,
-          Titulo,
-          Descripcion,
-          Fecha_Entrega,
-          Puntaje
-        }).returning('id_tarea');
-  
-   
-        const estudiantes = await trx('EstudianteCurso')
-          .select('id_estudiante')
-          .where({ id_curso });
-  
+  try {
+    // Start a transaction
+    await db.transaction(async trx => {
+      // Calculate the sum of all puntajes for the given course
+      const [{ totalPuntaje }] = await trx('Tarea')
+        .where({ id_curso })
+        .sum('Puntaje as totalPuntaje');
 
-        const estudianteTareas = estudiantes.map(estudiante => ({
-          id_estudiante: estudiante.id_estudiante,
-          id_tarea,
-          Tarea_Presentada: 0,
-          estado: 'Pendiente',
-          Puntuacion: 0
-        }));
-  
-        await trx('EstudianteTarea').insert(estudianteTareas);
-      });
-  
-      return { success: true };
-    } catch (error) {
-      console.error('Error: ', error);
-      throw error;
-    }
+      // Check if the sum of puntajes plus the new puntaje is less than or equal to 100
+      const totalPuntajeInt = totalPuntaje || 0;
+      const puntajeInt = parseInt(Puntaje, 10);
+
+      if (totalPuntajeInt + puntajeInt > 100) {
+        console.log(totalPuntajeInt);
+        console.log(puntajeInt);
+        
+        throw new Error('The sum of all puntajes for the course exceeds 100');
+      }
+
+      // Insert the new tarea
+      const [newTarea] = await trx('Tarea').insert({
+        id_curso,
+        Titulo,
+        Descripcion,
+        Fecha_Entrega,
+        Puntaje: puntajeInt
+      }).returning('id_tarea');
+
+      // Ensure id_tarea is an integer
+      const tareaId = parseInt(newTarea.id_tarea, 10);
+
+      // Get all students enrolled in the course
+      const estudiantes = await trx('EstudianteCurso')
+        .select('id_estudiante')
+        .where({ id_curso });
+
+      // Insert records in EstudianteTarea for each student
+      const estudianteTareas = estudiantes.map(estudiante => ({
+        id_estudiante: estudiante.id_estudiante,
+        id_tarea: tareaId, // Ensure id_tarea is an integer
+        Tarea_Presentada: 0,
+        estado: 'Sin Presentar',
+        Puntuacion: null
+      }));
+
+      await trx('EstudianteTarea').insert(estudianteTareas);
+    });
+
+    return { success: true };
+  } catch (error) {
+    console.error('Error creating tarea:', error);
+    throw error;
   }
+}
 
 async function deleteTarea(id_tarea) {
     try {
@@ -151,6 +163,19 @@ async function getTotalPuntajeByCurso(id_curso) {
     }
   }
 
+  async function getTareasByCurso(id_curso) {
+    try {
+      const result = await db('Tarea')
+        .select('id_tarea', 'Titulo', 'Descripcion', 'Fecha_Entrega', 'Puntaje')
+        .where({ id_curso });
+  
+      return result;
+    } catch (error) {
+      console.error('Error fetching tareas by curso:', error);
+      throw error;
+    }
+  }
+
 module.exports = {
   createTarea,
   deleteTarea,
@@ -159,5 +184,6 @@ module.exports = {
   updateTarea,
   getTareasByEstudianteAndCurso,
   getPresentedTareasByCurso,
-  updateEstudianteTarea
+  updateEstudianteTarea,
+  getTareasByCurso
 };

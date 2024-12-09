@@ -28,7 +28,7 @@ async function getTutoresByCurso(id_curso) {
 
 async function createTutorReunion(tutorReunionData) {
   try {
-    const { id_tutor, id_estudiante, FechaReunion, Descripcion, estado } = tutorReunionData;
+    const { id_tutor, id_estudiante, FechaReunion, Descripcion } = tutorReunionData;
 
     // Check if FechaReunion is at least three days after the current date
     const currentDate = moment().startOf('day');
@@ -45,7 +45,7 @@ async function createTutorReunion(tutorReunionData) {
     // Check if the student already has a meeting on the same day
     const studentMeetingCount = await db('TutorReunion')
       .where('id_estudiante', id_estudiante)
-      .andWhere(db.raw('DATE(FechaReunion) = ?', [reunionDate.format('YYYY-MM-DD')]))
+      .andWhere(db.raw('CAST(FechaReunion AS DATE) = ?', [reunionDate.format('YYYY-MM-DD')]))
       .count('id_meeting as count')
       .first();
 
@@ -56,7 +56,7 @@ async function createTutorReunion(tutorReunionData) {
     // Check if the tutor has no more than three scheduled meetings on the same day
     const tutorMeetingCount = await db('TutorReunion')
       .where('id_tutor', id_tutor)
-      .andWhere(db.raw('DATE(FechaReunion) = ?', [reunionDate.format('YYYY-MM-DD')]))
+      .andWhere(db.raw('CAST(FechaReunion AS DATE) = ?', [reunionDate.format('YYYY-MM-DD')]))
       .count('id_meeting as count')
       .first();
 
@@ -69,7 +69,7 @@ async function createTutorReunion(tutorReunionData) {
       id_estudiante,
       FechaReunion,
       Descripcion,
-      estado,
+      estado: 'Scheduled',
     });
 
     return result;

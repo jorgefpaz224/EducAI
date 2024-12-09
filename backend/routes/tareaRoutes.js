@@ -10,6 +10,8 @@ router.put('/actualizar-tarea/:id_tarea', tareaController.updateTarea);
 router.get('/tareas-estudiante-curso/:id_estudiante/:id_curso', tareaController.getTareasByEstudianteAndCurso);
 router.get('/presented-tareas-curso/:id_curso', tareaController.getPresentedTareasByCurso);
 router.put('/actualizar-estudiante-tarea/:id_estudiante_tareas', tareaController.updateEstudianteTarea);
+router.get('/tareas-curso/:id_curso', tareaController.getTareasByCurso);
+
 
 
 module.exports = router;

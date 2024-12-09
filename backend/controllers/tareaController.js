@@ -88,6 +88,17 @@ async function deleteTarea(req, res) {
       res.status(500).json({ error: 'Error updating EstudianteTarea' });
     }
   }
+
+  async function getTareasByCurso(req, res) {
+    const { id_curso } = req.params;
+  
+    try {
+      const result = await tareaService.getTareasByCurso(id_curso);
+      res.json(result);
+    } catch (error) {
+      res.status(500).json({ error: 'Error fetching tareas by curso' });
+    }
+  }
   
 
 module.exports = {
@@ -98,5 +109,6 @@ module.exports = {
   updateTarea,
   getTareasByEstudianteAndCurso,
   getPresentedTareasByCurso,
-  updateEstudianteTarea
+  updateEstudianteTarea,
+  getTareasByCurso
 };
